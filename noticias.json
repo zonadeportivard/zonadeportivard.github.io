@@ -1,1 +1,20 @@
-s
+[
+  {
+    "categoria": "MLB",
+    "titulo": "Últimas noticias de las Grandes Ligas",
+    "descripcion": "Mantente informado con las novedades, resultados y acontecimientos más importantes de MLB.",
+    "fecha": "2026-09-16"
+  },
+  {
+    "categoria": "Béisbol",
+    "titulo": "Actualidad del béisbol dominicano",
+    "descripcion": "Noticias, movimientos y novedades del béisbol de República Dominicana.",
+    "fecha": "2026-09-16"
+  },
+  {
+    "categoria": "Fútbol",
+    "titulo": "Noticias destacadas del fútbol",
+    "descripcion": "Conoce las principales novedades del mundo del fútbol.",
+    "fecha": "2026-09-16"
+  }
+]
