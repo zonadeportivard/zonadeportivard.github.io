@@ -133,6 +133,8 @@
       padding: 0 15px;
     }
 
+    /* ANUNCIOS ADSENSE */
+
     .ad {
       background: white;
       border: 1px dashed #b8bec5;
@@ -143,9 +145,8 @@
       align-items: center;
       justify-content: center;
 
-      color: #6b7280;
-      text-align: center;
-      padding: 20px;
+      padding: 15px;
+      overflow: hidden;
     }
 
     .section-title {
@@ -370,7 +371,6 @@
 
   </header>
 
-
   <nav>
 
     <a href="#inicio">Inicio</a>
@@ -387,7 +387,6 @@
 
   </nav>
 
-
   <section class="hero" id="inicio">
 
     <div>
@@ -402,23 +401,30 @@
 
   </section>
 
-
   <main class="container">
 
-
-    <!-- PUBLICIDAD -->
+    <!-- ANUNCIO ADSENSE 1 -->
 
     <div class="ad">
-      Espacio publicitario
-    </div>
 
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-6764195930165637"
+           data-ad-slot="1227465453"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+    </div>
 
     <!-- CATEGORÍAS -->
 
     <h2 class="section-title">
       🏆 Categorías
     </h2>
-
 
     <div class="categories">
 
@@ -431,7 +437,6 @@
 
       </a>
 
-
       <a
         href="#noticias"
         class="category"
@@ -441,7 +446,6 @@
 
       </a>
 
-
       <a
         href="#noticias"
         class="category">
@@ -449,7 +453,6 @@
         🇩🇴 LIDOM
 
       </a>
-
 
       <a
         href="#noticias"
@@ -459,7 +462,6 @@
         ⚽ Fútbol
 
       </a>
-
 
       <a
         href="#noticias"
@@ -472,13 +474,22 @@
 
     </div>
 
-
-    <!-- PUBLICIDAD -->
+    <!-- ANUNCIO ADSENSE 2 -->
 
     <div class="ad">
-      Espacio publicitario
-    </div>
 
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-6764195930165637"
+           data-ad-slot="1227465453"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+    </div>
 
     <!-- NOTICIAS -->
 
@@ -490,7 +501,6 @@
 
     </h2>
 
-
     <div id="lista-noticias">
 
       <div class="loading">
@@ -501,13 +511,22 @@
 
     </div>
 
-
-    <!-- PUBLICIDAD -->
+    <!-- ANUNCIO ADSENSE 3 -->
 
     <div class="ad">
-      Espacio publicitario
-    </div>
 
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-6764195930165637"
+           data-ad-slot="1227465453"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+    </div>
 
     <!-- SOBRE NOSOTROS -->
 
@@ -532,9 +551,7 @@
 
     </section>
 
-
   </main>
-
 
   <footer>
 
@@ -547,7 +564,6 @@
     </p>
 
   </footer>
-
 
   <script>
 
@@ -570,14 +586,12 @@
 
         lista.innerHTML = "";
 
-
         noticias.forEach(noticia => {
 
           const articulo =
             document.createElement("article");
 
           articulo.className = "news";
-
 
           articulo.innerHTML = `
 
@@ -590,28 +604,23 @@
                 onerror="this.style.display='none';">
             ` : ""}
 
-
             <div class="news-content">
 
               <span class="news-category">
                 ${noticia.categoria || "Deportes"}
               </span>
 
-
               <h3>
                 ${noticia.titulo || ""}
               </h3>
-
 
               <div class="date">
                 📅 ${noticia.fecha || ""}
               </div>
 
-
               <p>
                 ${noticia.descripcion || ""}
               </p>
-
 
               <div class="source">
 
@@ -620,7 +629,6 @@
                 ${noticia.fuente || "Zona Deportiva RD"}
 
               </div>
-
 
               ${noticia.url ? `
 
@@ -636,7 +644,6 @@
 
               ` : ""}
 
-
               <a
                 class="social"
                 href="https://www.facebook.com/sharer/sharer.php?u=https://zonadeportivard.github.io/-zona-deportiva-rd/"
@@ -647,18 +654,15 @@
 
               </a>
 
-
             </div>
 
           `;
-
 
           lista.appendChild(articulo);
 
         });
 
       })
-
 
       .catch(error => {
 
@@ -679,7 +683,6 @@
       });
 
   </script>
-
 
 </body>
 </html>
