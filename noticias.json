@@ -1,119 +1,90 @@
-[
-{
-“categoria”: “MLB”,
-“titulo”: “Los Brewers aseguran el título de la División Central de la Liga Nacional”,
-“descripcion”: “Milwaukee derrotó 5-1 a los Pittsburgh Pirates. Jacob Misiorowski lanzó cinco entradas sin permitir carreras y ponchó a siete. Con la derrota de Chicago ante Atlanta, los Brewers aseguraron su cuarto título consecutivo de la División Central.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “Reuters”,
-“url”: “https://www.reuters.com/sports/baseball/jacob-misiorowski-fires-5-scoreless-innings-brewers-top-pirates–flm-2026-09-16/”,
-“imagen”: “”
-},
-{
-“categoria”: “LIDOM”,
-“titulo”: “Trevor Bauer jugará con las Estrellas Orientales”,
-“descripcion”: “Las Estrellas Orientales anunciaron a Trevor Bauer como refuerzo para la temporada 2026-27 de LIDOM. Será su primera participación en el béisbol invernal dominicano.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “LIDOM”,
-“url”: “https://lidom.com/seccion/estrellas-orientales.html”,
-“imagen”: “”
-},
-{
-“categoria”: “BALONCESTO”,
-“titulo”: “Mauricio Báez vence 80-77 a San Carlos”,
-“descripcion”: “Mauricio Báez derrotó 80-77 a San Carlos en el 50 Torneo de Baloncesto Superior del Distrito Nacional 2026.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “Comité Olímpico Dominicano”,
-“url”: “https://colimdo.org/noticias/club-mauricio-baez-extiende-castigo-sobre-san-carlos-en-el-50-tbs-distrito-2026/”,
-“imagen”: “”
-},
-{
-“categoria”: “MLB”,
-“titulo”: “Los Dodgers vencen a los Reds y se acercan al título divisional”,
-“descripcion”: “Los Angeles Dodgers derrotaron 4-0 a Cincinnati. Yoshinobu Yamamoto lanzó siete entradas sin permitir carreras y Teoscar Hernández y Alex Freeland conectaron jonrones.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “Reuters”,
-“url”: “https://www.reuters.com/sports/baseball/yoshinobu-yamamoto-allows-1-hit-over-7-scoreless-dodgers-blank-reds–flm-2026-09-16/”,
-“imagen”: “”
-},
-{
-“categoria”: “MLB”,
-“titulo”: “Los Braves derrotan a los Cubs con tres jonrones”,
-“descripcion”: “Atlanta venció 6-3 a Chicago con cuadrangulares de Ronald Acuña Jr., Ozzie Albies y Drake Baldwin.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “Reuters”,
-“url”: “https://www.reuters.com/sports/baseball/braves-blast-3-hrs-victory-over-cubs–flm-2026-09-16/”,
-“imagen”: “”
-},
-{
-“categoria”: “MLB”,
-“titulo”: “Yankees superan a los Twins con jonrones de Spencer Jones y Cody Bellinger”,
-“descripcion”: “Nueva York derrotó 8-1 a Minnesota. Spencer Jones conectó un jonrón de tres carreras y Cody Bellinger agregó otro cuadrangular.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “Reuters”,
-“url”: “https://www.reuters.com/sports/baseball/spencer-jones-cody-bellinger-power-yankees-rout-twins–flm-2026-09-16/”,
-“imagen”: “”
-},
-{
-“categoria”: “MLB”,
-“titulo”: “Dodgers y Yankees aseguran puestos en la postemporada”,
-“descripcion”: “Los Dodgers y los Yankees aseguraron su clasificación a la postemporada de las Grandes Ligas tras sus respectivas victorias.”,
-“fecha”: “15 de septiembre de 2026”,
-“fuente”: “Reuters”,
-“url”: “https://www.reuters.com/sports/mlb-roundup-dodgers-yankees-sew-up-postseason-berths–flm-2026-09-15/”,
-“imagen”: “”
-},
-{
-“categoria”: “LIDOM”,
-“titulo”: “Las Estrellas anuncian a Harold Ramírez como importado”,
-“descripcion”: “Las Estrellas Orientales anunciaron al colombiano Harold Ramírez como uno de sus jugadores importados para la temporada 2026-27 de LIDOM.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “LIDOM”,
-“url”: “https://lidom.com/seccion/estrellas-orientales.html”,
-“imagen”: “”
-},
-{
-“categoria”: “LIDOM”,
-“titulo”: “Las Estrellas anuncian a Aaron Schunk como refuerzo”,
-“descripcion”: “Las Estrellas Orientales anunciaron al torpedero Aaron Schunk como parte de sus importados para la temporada 2026-27.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “LIDOM”,
-“url”: “https://lidom.com/seccion/estrellas-orientales.html”,
-“imagen”: “”
-},
-{
-“categoria”: “LIDOM”,
-“titulo”: “Los bicampeones del Escogido preparan sus prácticas”,
-“descripcion”: “Los Leones del Escogido, actuales bicampeones, tienen programado iniciar sus prácticas de cara a la temporada 2026-27.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “LIDOM”,
-“url”: “https://lidom.com/autor/redaccion.html”,
-“imagen”: “”
-},
-{
-“categoria”: “LIDOM”,
-“titulo”: “Otto López mantiene la pelea por el liderato de bateo”,
-“descripcion”: “El dominicano Otto López continúa en la lucha por el liderato de bateo de la Liga Nacional durante la temporada de Grandes Ligas.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “LIDOM”,
-“url”: “https://lidom.com/seccion/equipos.html”,
-“imagen”: “”
-},
-{
-“categoria”: “VOLEIBOL”,
-“titulo”: “República Dominicana avanza a semifinales del NORCECA”,
-“descripcion”: “República Dominicana sorprendió a México y avanzó a las semifinales del Campeonato Continental Masculino NORCECA 2026.”,
-“fecha”: “14 de septiembre de 2026”,
-“fuente”: “NORCECA”,
-“url”: “https://norceca.info/dominican-republic-stuns-mexico-in-norceca-championship-quarterfinal/”,
-“imagen”: “”
-},
-{
-“categoria”: “MLB”,
-“titulo”: “Los Brewers conquistan su cuarto título divisional consecutivo”,
-“descripcion”: “Milwaukee aseguró por cuarto año consecutivo el título de la División Central de la Liga Nacional tras vencer a Pittsburgh y aprovechar la derrota de Chicago.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “Reuters”,
-“url”: “https://www.reuters.com/sports/baseball/jacob-misiorowski-fires-5-scoreless-innings-brewers-top-pirates–flm-2026-09-16/”,
-“imagen”: “”
-}
-]
+  {
+    "categoria": "MLB",
+    "titulo": "Los Dodgers vencen a los Reds y se acercan al título divisional",
+    "descripcion": "Los Angeles Dodgers derrotaron 4-0 a Cincinnati. Yoshinobu Yamamoto lanzó siete entradas sin permitir carreras y Teoscar Hernández y Alex Freeland conectaron jonrones.",
+    "fecha": "16 de septiembre de 2026",
+    "fuente": "Reuters",
+    "url": "https://www.reuters.com/sports/baseball/yoshinobu-yamamoto-allows-1-hit-over-7-scoreless-dodgers-blank-reds--flm-2026-09-16/",
+    "imagen": ""
+  },
+  {
+    "categoria": "MLB",
+    "titulo": "Los Braves derrotan a los Cubs con tres jonrones",
+    "descripcion": "Atlanta venció 6-3 a Chicago con cuadrangulares de Ronald Acuña Jr., Ozzie Albies y Drake Baldwin.",
+    "fecha": "16 de septiembre de 2026",
+    "fuente": "Reuters",
+    "url": "https://www.reuters.com/sports/baseball/braves-blast-3-hrs-victory-over-cubs--flm-2026-09-16/",
+    "imagen": ""
+  },
+  {
+    "categoria": "MLB",
+    "titulo": "Yankees superan a los Twins con jonrones de Spencer Jones y Cody Bellinger",
+    "descripcion": "Nueva York derrotó 8-1 a Minnesota. Spencer Jones conectó un jonrón de tres carreras y Cody Bellinger agregó otro cuadrangular.",
+    "fecha": "16 de septiembre de 2026",
+    "fuente": "Reuters",
+    "url": "https://www.reuters.com/sports/baseball/spencer-jones-cody-bellinger-power-yankees-rout-twins--flm-2026-09-16/",
+    "imagen": ""
+  },
+  {
+    "categoria": "MLB",
+    "titulo": "Dodgers y Yankees aseguran puestos en la postemporada",
+    "descripcion": "Los Dodgers y los Yankees aseguraron su clasificación a la postemporada de las Grandes Ligas tras sus respectivas victorias.",
+    "fecha": "15 de septiembre de 2026",
+    "fuente": "Reuters",
+    "url": "https://www.reuters.com/sports/mlb-roundup-dodgers-yankees-sew-up-postseason-berths--flm-2026-09-15/",
+    "imagen": ""
+  },
+  {
+    "categoria": "LIDOM",
+    "titulo": "Las Estrellas anuncian a Harold Ramírez como importado",
+    "descripcion": "Las Estrellas Orientales anunciaron al colombiano Harold Ramírez como uno de sus jugadores importados para la temporada 2026-27 de LIDOM.",
+    "fecha": "16 de septiembre de 2026",
+    "fuente": "LIDOM",
+    "url": "https://lidom.com/seccion/estrellas-orientales.html",
+    "imagen": ""
+  },
+  {
+    "categoria": "LIDOM",
+    "titulo": "Las Estrellas anuncian a Aaron Schunk como refuerzo",
+    "descripcion": "Las Estrellas Orientales anunciaron al torpedero Aaron Schunk como parte de sus importados para la temporada 2026-27.",
+    "fecha": "16 de septiembre de 2026",
+    "fuente": "LIDOM",
+    "url": "https://lidom.com/seccion/estrellas-orientales.html",
+    "imagen": ""
+  },
+  {
+    "categoria": "LIDOM",
+    "titulo": "Los bicampeones del Escogido preparan sus prácticas",
+    "descripcion": "Los Leones del Escogido, actuales bicampeones, tienen programado iniciar sus prácticas de cara a la temporada 2026-27.",
+    "fecha": "16 de septiembre de 2026",
+    "fuente": "LIDOM",
+    "url": "https://lidom.com/autor/redaccion.html",
+    "imagen": ""
+  },
+  {
+    "categoria": "LIDOM",
+    "titulo": "Otto López mantiene la pelea por el liderato de bateo",
+    "descripcion": "El dominicano Otto López continúa en la lucha por el liderato de bateo de la Liga Nacional durante la temporada de Grandes Ligas.",
+    "fecha": "16 de septiembre de 2026",
+    "fuente": "LIDOM",
+    "url": "https://lidom.com/seccion/equipos.html",
+    "imagen": ""
+  },
+  {
+    "categoria": "VOLEIBOL",
+    "titulo": "República Dominicana avanza a semifinales del NORCECA",
+    "descripcion": "República Dominicana sorprendió a México y avanzó a las semifinales del Campeonato Continental Masculino NORCECA 2026.",
+    "fecha": "14 de septiembre de 2026",
+    "fuente": "NORCECA",
+    "url": "https://norceca.info/dominican-republic-stuns-mexico-in-norceca-championship-quarterfinal/",
+    "imagen": ""
+  },
+  {
+    "categoria": "MLB",
+    "titulo": "Los Brewers conquistan su cuarto título divisional consecutivo",
+    "descripcion": "Milwaukee aseguró por cuarto año consecutivo el título de la División Central de la Liga Nacional tras vencer a Pittsburgh y aprovechar la derrota de Chicago.",
+    "fecha": "16 de septiembre de 2026",
+    "fuente": "Reuters",
+    "url": "https://www.reuters.com/sports/baseball/jacob-misiorowski-fires-5-scoreless-innings-brewers-top-pirates--flm-2026-09-16/",
+    "imagen": ""
+  }
