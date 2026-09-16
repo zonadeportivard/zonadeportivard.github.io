@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -218,15 +217,6 @@
       color: #4b5563;
     }
 
-    .draft {
-      background: #fff7ed;
-      color: #9a3412;
-      padding: 12px;
-      border-radius: 6px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-
     .social {
       background: #1877f2;
       color: white;
@@ -236,6 +226,22 @@
       text-decoration: none;
       font-weight: bold;
       margin-top: 10px;
+    }
+
+    .loading {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      color: #6b7280;
+    }
+
+    .error {
+      background: #fee2e2;
+      color: #991b1b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 25px;
     }
 
     footer {
@@ -367,7 +373,7 @@
           resultados y novedades del béisbol.
         </p>
 
-        <a href="#noticia-bauer">
+        <a href="#noticias">
           Ver noticias →
         </a>
 
@@ -388,7 +394,7 @@
           de Major League Baseball.
         </p>
 
-        <a href="#noticia-mlb">
+        <a href="#noticias">
           Ver noticias →
         </a>
 
@@ -444,121 +450,19 @@
       Espacio publicitario
     </div>
 
-    <!-- NOTICIAS -->
+    <!-- NOTICIAS AUTOMÁTICAS DESDE noticias.json -->
 
     <h2 class="section-title" id="noticias">
       📰 Últimas noticias deportivas
     </h2>
 
-    <!-- NOTICIA MLB -->
+    <div id="lista-noticias">
 
-    <article class="news" id="noticia-mlb">
-
-      <div class="news-content">
-
-        <span class="label">
-          ⚾ MLB · GRANDES LIGAS
-        </span>
-
-        <h2>
-          ⚾ Noticias de MLB: resultados y actualidad
-          de las Grandes Ligas
-        </h2>
-
-        <p class="date">
-          Zona Deportiva RD · Septiembre 2026
-        </p>
-
-        <p>
-          Mantente informado sobre las noticias,
-          resultados y novedades más importantes
-          de las Grandes Ligas.
-        </p>
-
-        <p>
-          En Zona Deportiva RD compartiremos
-          información sobre los equipos, jugadores
-          y acontecimientos destacados de MLB.
-        </p>
-
-        <p>
-          Visita nuestra página para conocer
-          las novedades del béisbol y seguir
-          la actualidad deportiva.
-        </p>
-
-        <div class="source">
-          <strong>Fuente:</strong>
-          Información deportiva pendiente de
-          verificación antes de publicar resultados
-          o noticias específicas.
-        </div>
-
-        <a
-          class="social"
-          href="https://www.facebook.com/"
-          target="_blank"
-          rel="noopener">
-          Compartir en Facebook
-        </a>
-
+      <div class="loading">
+        Cargando las últimas noticias...
       </div>
 
-    </article>
-
-    <!-- NOTICIA LIDOM -->
-
-    <article class="news" id="noticia-bauer">
-
-      <div class="news-content">
-
-        <span class="label">
-          BÉISBOL · LIDOM
-        </span>
-
-        <h2>
-          ⚾ Trevor Bauer y las Estrellas Orientales:
-          noticia en preparación
-        </h2>
-
-        <p class="date">
-          Zona Deportiva RD · Septiembre 2026
-        </p>
-
-        <div class="draft">
-          BORRADOR: Verificar el anuncio oficial
-          antes de publicar esta noticia.
-        </div>
-
-        <p>
-          Trevor Bauer es un lanzador estadounidense
-          con experiencia en las Grandes Ligas.
-          Su nombre ha sido relacionado con el
-          béisbol invernal dominicano.
-        </p>
-
-        <p>
-          En Zona Deportiva RD estaremos compartiendo
-          las novedades de la temporada de béisbol
-          dominicano, incluyendo las noticias de
-          las Estrellas Orientales y los demás equipos
-          de LIDOM.
-        </p>
-
-        <p>
-          Próximamente publicaremos la información
-          confirmada sobre los refuerzos, las prácticas
-          y las novedades de los equipos dominicanos.
-        </p>
-
-        <div class="source">
-          <strong>Fuente:</strong>
-          Pendiente de confirmación oficial.
-        </div>
-
-      </div>
-
-    </article>
+    </div>
 
     <!-- TERCER ESPACIO PUBLICITARIO -->
 
@@ -622,6 +526,115 @@
     </p>
 
   </footer>
+
+  <!-- CÓDIGO PARA CARGAR noticias.json -->
+
+  <script>
+
+    fetch("noticias.json")
+      .then(response => {
+
+        if (!response.ok) {
+          throw new Error("No se pudo cargar noticias.json");
+        }
+
+        return response.json();
+
+      })
+
+      .then(noticias => {
+
+        const contenedor =
+          document.getElementById("lista-noticias");
+
+        if (!contenedor) return;
+
+        contenedor.innerHTML = "";
+
+        if (!Array.isArray(noticias) || noticias.length === 0) {
+
+          contenedor.innerHTML = `
+            <div class="loading">
+              Todavía no hay noticias publicadas.
+            </div>
+          `;
+
+          return;
+
+        }
+
+        noticias.forEach(noticia => {
+
+          const articulo = document.createElement("article");
+
+          articulo.className = "news";
+
+          articulo.innerHTML = `
+
+            <div class="news-content">
+
+              <span class="label">
+                ${noticia.categoria || "Noticias"}
+              </span>
+
+              <h2>
+                ${noticia.titulo || "Noticia deportiva"}
+              </h2>
+
+              <p class="date">
+                Zona Deportiva RD · ${noticia.fecha || ""}
+              </p>
+
+              <p>
+                ${noticia.descripcion || ""}
+              </p>
+
+              <div class="source">
+                <strong>Fuente:</strong>
+                Zona Deportiva RD
+              </div>
+
+              <a
+                class="social"
+                href="https://www.facebook.com/sharer/sharer.php?u=https://zonadeportivard.github.io/-zona-deportiva-rd/"
+                target="_blank"
+                rel="noopener">
+                Compartir en Facebook
+              </a>
+
+            </div>
+
+          `;
+
+          contenedor.appendChild(articulo);
+
+        });
+
+      })
+
+      .catch(error => {
+
+        console.error(error);
+
+        const contenedor =
+          document.getElementById("lista-noticias");
+
+        if (!contenedor) return;
+
+        contenedor.innerHTML = `
+
+          <div class="error">
+            No se pudieron cargar las noticias.
+            Verifica que el archivo
+            <strong>noticias.json</strong>
+            esté guardado en el mismo repositorio.
+          </div>
+
+        `;
+
+      });
+
+  </script>
 
 </body>
 </html>
