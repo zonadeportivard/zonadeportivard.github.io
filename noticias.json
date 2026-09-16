@@ -1,20 +1,38 @@
 [
   {
     "categoria": "MLB",
-    "titulo": "Últimas noticias de las Grandes Ligas",
-    "descripcion": "Mantente informado con las novedades, resultados y acontecimientos más importantes de MLB.",
-    "fecha": "2026-09-16"
+    "titulo": "Los Brewers conquistan por cuarto año consecutivo la División Central de la Liga Nacional",
+    "descripcion": "Milwaukee derrotó 5-1 a los Pittsburgh Pirates y, tras la derrota de los Chicago Cubs ante Atlanta, aseguró su cuarto título consecutivo de la División Central de la Liga Nacional.",
+    "fecha": "16 de septiembre de 2026"
   },
   {
-    "categoria": "Béisbol",
-    "titulo": "Actualidad del béisbol dominicano",
-    "descripcion": "Noticias, movimientos y novedades del béisbol de República Dominicana.",
-    "fecha": "2026-09-16"
+    "categoria": "MLB",
+    "titulo": "Jacob Misiorowski brilla en la victoria de Milwaukee",
+    "descripcion": "Jacob Misiorowski lanzó cinco entradas sin permitir carreras, ponchó a siete bateadores y ayudó a los Brewers a vencer 5-1 a Pittsburgh. Joey Ortiz aportó tres hits y dos carreras impulsadas.",
+    "fecha": "16 de septiembre de 2026"
   },
   {
-    "categoria": "Fútbol",
-    "titulo": "Noticias destacadas del fútbol",
-    "descripcion": "Conoce las principales novedades del mundo del fútbol.",
-    "fecha": "2026-09-16"
+    "categoria": "MLB",
+    "titulo": "Yamamoto domina y los Dodgers vencen a Cincinnati",
+    "descripcion": "Yoshinobu Yamamoto lanzó siete entradas sin permitir carreras y solamente concedió un hit en la victoria de los Dodgers 4-0 sobre los Reds. Los Angeles continúa acercándose al título de la División Oeste de la Liga Nacional.",
+    "fecha": "16 de septiembre de 2026"
+  },
+  {
+    "categoria": "LIDOM",
+    "titulo": "Trevor Bauer jugará con las Estrellas Orientales",
+    "descripcion": "El lanzador Trevor Bauer se incorporará a las Estrellas Orientales para la temporada 2026-27 de la Liga de Béisbol Profesional de la República Dominicana.",
+    "fecha": "16 de septiembre de 2026"
+  },
+  {
+    "categoria": "LIDOM",
+    "titulo": "Las Estrellas continúan preparando su equipo para la temporada 2026-27",
+    "descripcion": "Las Estrellas Orientales avanzan con la preparación de su plantilla para la próxima temporada de LIDOM, con Trevor Bauer entre sus principales incorporaciones.",
+    "fecha": "16 de septiembre de 2026"
+  },
+  {
+    "categoria": "BALONCESTO",
+    "titulo": "Mauricio Báez vence a San Carlos 80-77 en el TBS Distrito 2026",
+    "descripcion": "Mauricio Báez derrotó 80-77 a San Carlos y extendió a cinco su racha de victorias sobre ese rival en el 50 Torneo de Baloncesto Superior del Distrito Nacional.",
+    "fecha": "16 de septiembre de 2026"
   }
 ]
