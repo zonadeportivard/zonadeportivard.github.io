@@ -591,14 +591,24 @@
 
               <div class="source">
                 <strong>Fuente:</strong>
-                Zona Deportiva RD
+                ${noticia.fuente || "Zona Deportiva RD"}
               </div>
+
+              ${noticia.url ? `
+                <a
+                  class="social"
+                  href="${noticia.url}"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  🔗 Leer fuente
+                </a>
+              ` : ""}
 
               <a
                 class="social"
                 href="https://www.facebook.com/sharer/sharer.php?u=https://zonadeportivard.github.io/-zona-deportiva-rd/"
                 target="_blank"
-                rel="noopener">
+                rel="noopener noreferrer">
                 Compartir en Facebook
               </a>
 
