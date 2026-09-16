@@ -1,29 +1,29 @@
 [
-{
-“categoria”: “MLB”,
-“titulo”: “Los Brewers aseguran el título de la División Central de la Liga Nacional”,
-“descripcion”: “Milwaukee derrotó 5-1 a los Pittsburgh Pirates. Jacob Misiorowski lanzó cinco entradas sin permitir carreras y ponchó a siete. Con la derrota de Chicago ante Atlanta, los Brewers aseguraron su cuarto título consecutivo de la División Central.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “Reuters”,
-“url”: “https://www.reuters.com/sports/baseball/jacob-misiorowski-fires-5-scoreless-innings-brewers-top-pirates–flm-2026-09-16/”,
-“imagen”: “”
-},
-{
-“categoria”: “LIDOM”,
-“titulo”: “Trevor Bauer jugará con las Estrellas Orientales”,
-“descripcion”: “Las Estrellas Orientales anunciaron a Trevor Bauer como refuerzo para la temporada 2026-27 de LIDOM. Será su primera participación en el béisbol invernal dominicano.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “LIDOM”,
-“url”: “https://lidom.com/seccion/estrellas-orientales.html”,
-“imagen”: “”
-},
-{
-“categoria”: “BALONCESTO”,
-“titulo”: “Mauricio Báez vence 80-77 a San Carlos”,
-“descripcion”: “Mauricio Báez derrotó 80-77 a San Carlos en el 50 Torneo de Baloncesto Superior del Distrito Nacional 2026.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “Comité Olímpico Dominicano”,
-“url”: “https://colimdo.org/noticias/club-mauricio-baez-extiende-castigo-sobre-san-carlos-en-el-50-tbs-distrito-2026/”,
-“imagen”: “”
-}
+  {
+    "categoria": "MLB",
+    "titulo": "Los Brewers aseguran el título de la División Central de la Liga Nacional",
+    "descripcion": "Milwaukee derrotó 5-1 a los Pittsburgh Pirates. Jacob Misiorowski lanzó cinco entradas sin permitir carreras y ponchó a siete. Con la derrota de Chicago ante Atlanta, los Brewers aseguraron su cuarto título consecutivo de la División Central.",
+    "fecha": "16 de septiembre de 2026",
+    "fuente": "Reuters",
+    "url": "https://www.reuters.com/sports/baseball/jacob-misiorowski-fires-5-scoreless-innings-brewers-top-pirates--flm-2026-09-16/",
+    "imagen": ""
+  },
+  {
+    "categoria": "LIDOM",
+    "titulo": "Trevor Bauer jugará con las Estrellas Orientales",
+    "descripcion": "Las Estrellas Orientales anunciaron a Trevor Bauer como refuerzo para la temporada 2026-27 de LIDOM. Será su primera participación en el béisbol invernal dominicano.",
+    "fecha": "16 de septiembre de 2026",
+    "fuente": "LIDOM",
+    "url": "https://lidom.com/seccion/estrellas-orientales.html",
+    "imagen": ""
+  },
+  {
+    "categoria": "BALONCESTO",
+    "titulo": "Mauricio Báez vence 80-77 a San Carlos",
+    "descripcion": "Mauricio Báez derrotó 80-77 a San Carlos en el 50 Torneo de Baloncesto Superior del Distrito Nacional 2026.",
+    "fecha": "16 de septiembre de 2026",
+    "fuente": "Comité Olímpico Dominicano",
+    "url": "https://colimdo.org/noticias/club-mauricio-baez-extiende-castigo-sobre-san-carlos-en-el-50-tbs-distrito-2026/",
+    "imagen": ""
+  }
 ]
