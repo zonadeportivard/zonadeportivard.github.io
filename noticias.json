@@ -11,7 +11,7 @@
   {
     "categoria": "LIDOM",
     "titulo": "Trevor Bauer jugará con las Estrellas Orientales en LIDOM",
-    "descripcion": "Las Estrellas Orientales anunciaron a Trevor Bauer como refuerzo para la temporada 2026-27 de la Liga de Béisbol Profesional de la República Dominicana (LIDOM). Será su primera participación en el béisbol invernal dominicano.",
+    "descripcion": "Las Estrellas Orientales anunciaron a Trevor Bauer como refuerzo para la temporada 2026-27 de la Liga de Béisbol Profesional de la República Dominicana. Será su primera participación en el béisbol invernal dominicano.",
     "fecha": "16 de septiembre de 2026",
     "fuente": "LIDOM",
     "url": "https://lidom.com/seccion/estrellas-orientales.html",
@@ -24,6 +24,42 @@
     "fecha": "16 de septiembre de 2026",
     "fuente": "Comité Olímpico Dominicano",
     "url": "https://colimdo.org/noticias/club-mauricio-baez-extiende-castigo-sobre-san-carlos-en-el-50-tbs-distrito-2026/",
+    "imagen": ""
+  },
+  {
+    "categoria": "MLB",
+    "titulo": "Los Guardians toman el primer lugar de la División Central de la Liga Americana",
+    "descripcion": "Los Cleveland Guardians derrotaron 6-3 a los Chicago White Sox y quedaron solos en el primer lugar de la División Central de la Liga Americana. El novato Petey Halpin conectó un cuadrangular de tres carreras.",
+    "fecha": "17 de septiembre de 2026",
+    "fuente": "Reuters",
+    "url": "https://www.reuters.com/sports/mlb-roundup-guardians-overtake-white-sox-1st-place-al-central--flm-2026-09-17/",
+    "imagen": ""
+  },
+  {
+    "categoria": "MLB",
+    "titulo": "Los Reds derrotan a los Dodgers y evitan que aseguren la División Oeste",
+    "descripcion": "Los Cincinnati Reds vencieron 6-2 a Los Angeles Dodgers y evitaron que el conjunto angelino asegurara el título de la División Oeste de la Liga Nacional. Elly De La Cruz conectó un cuadrangular durante la victoria.",
+    "fecha": "17 de septiembre de 2026",
+    "fuente": "Reuters",
+    "url": "https://www.reuters.com/sports/mlb-roundup-guardians-overtake-white-sox-1st-place-al-central--flm-2026-09-17/",
+    "imagen": ""
+  },
+  {
+    "categoria": "MLB",
+    "titulo": "Ethan Salas conecta dos jonrones en triunfo de los Padres",
+    "descripcion": "Ethan Salas conectó dos cuadrangulares en la victoria de los San Diego Padres 9-3 sobre los Colorado Rockies. El joven receptor terminó el encuentro con tres carreras impulsadas.",
+    "fecha": "17 de septiembre de 2026",
+    "fuente": "Reuters",
+    "url": "https://www.reuters.com/sports/mlb-roundup-guardians-overtake-white-sox-1st-place-al-central--flm-2026-09-17/",
+    "imagen": ""
+  },
+  {
+    "categoria": "LIDOM",
+    "titulo": "LIDOM entra en la cuenta regresiva para la temporada 2026-27",
+    "descripcion": "Los seis equipos de la Liga de Béisbol Profesional de la República Dominicana afinan sus preparativos para la temporada 2026-27. La campaña está programada para comenzar el 16 de octubre.",
+    "fecha": "17 de septiembre de 2026",
+    "fuente": "LIDOM",
+    "url": "https://lidom.com/",
     "imagen": ""
   }
 ]
