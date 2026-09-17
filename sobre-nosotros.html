@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sobre Nosotros | Zona Deportiva RD</title>
+
+  <meta
+    name="description"
+    content="Conoce a Zona Deportiva RD, un medio digital dedicado a las noticias deportivas de República Dominicana y el mundo."
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --rojo: #e50914;
+      --rojo-oscuro: #a90009;
+      --negro: #080808;
+      --negro-2: #151515;
+      --gris: #252525;
+      --blanco: #ffffff;
+      --gris-claro: #cccccc;
+      --amarillo: #ffd000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.95)),
+        url("https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1800&q=80")
+        center/cover fixed;
+      color: var(--blanco);
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contenedor {
+      width: min(1000px, 92%);
+      margin: auto;
+    }
+
+    header {
+      background: #050505;
+      border-bottom: 4px solid var(--rojo);
+      padding: 20px 0;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .logo h1 {
+      font-family: "Anton", sans-serif;
+      font-size: clamp(32px, 7vw, 60px);
+      letter-spacing: 1px;
+    }
+
+    .logo h1 span {
+      color: var(--rojo);
+    }
+
+    .logo p {
+      color: var(--amarillo);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-top: 5px;
+    }
+
+    nav {
+      background: #111111;
+      border-bottom: 1px solid #333333;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 12px 0;
+    }
+
+    .menu a {
+      background: #222222;
+      border: 1px solid #3a3a3a;
+      border-radius: 6px;
+      padding: 10px 15px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .menu a:hover {
+      background: var(--rojo);
+      border-color: var(--rojo);
+    }
+
+    main {
+      padding: 35px 0 50px;
+    }
+
+    .tarjeta {
+      background:
+        linear-gradient(145deg, rgba(30, 30, 30, 0.98), rgba(10, 10, 10, 0.98));
+      border: 1px solid #3a3a3a;
+      border-radius: 16px;
+      padding: clamp(22px, 5vw, 45px);
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+    }
+
+    .etiqueta {
+      display: inline-block;
+      background: var(--rojo);
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: "Anton", sans-serif;
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.1;
+      margin-bottom: 22px;
+      text-transform: uppercase;
+    }
+
+    h2 span {
+      color: var(--rojo);
+    }
+
+    h3 {
+      color: var(--amarillo);
+      font-size: 20px;
+      margin: 28px 0 10px;
+    }
+
+    p {
+      color: var(--gris-claro);
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin: 15px 0 20px 22px;
+      color: var(--gris-claro);
+      line-height: 2;
+      font-size: 14px;
+    }
+
+    .boton {
+      display: inline-block;
+      background: var(--rojo);
+      color: white;
+      padding: 13px 18px;
+      border-radius: 7px;
+      font-size: 12px;
+      font-weight: 900;
+      margin-top: 15px;
+    }
+
+    .boton:hover {
+      background: var(--rojo-oscuro);
+    }
+
+    footer {
+      background: #050505;
+      border-top: 4px solid var(--rojo);
+      text-align: center;
+      padding: 28px 0;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: #999999;
+      margin-bottom: 5px;
+    }
+
+    footer strong {
+      color: var(--blanco);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="contenedor logo">
+      <h1>ZONA <span>DEPORTIVA RD</span></h1>
+      <p>PASIÓN POR EL DEPORTE</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="contenedor menu">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="politica-privacidad.html">Privacidad</a>
+      <a href="terminos.html">Términos</a>
+    </div>
+  </nav>
+
+  <main class="contenedor">
+    <section class="tarjeta">
+      <span class="etiqueta">Zona Deportiva RD</span>
+
+      <h2>Sobre <span>nosotros</span></h2>
+
+      <p>
+        Zona Deportiva RD es un medio digital dedicado a informar sobre
+        las principales noticias deportivas de República Dominicana y el
+        mundo.
+      </p>
+
+      <p>
+        Nuestro objetivo es ofrecer a los fanáticos información clara,
+        rápida y fácil de consultar sobre béisbol, MLB, LIDOM, baloncesto,
+        fútbol y otras disciplinas deportivas.
+      </p>
+
+      <h3>¿Qué publicamos?</h3>
+
+      <ul>
+        <li>Noticias de MLB y béisbol internacional.</li>
+        <li>Información de LIDOM y equipos dominicanos.</li>
+        <li>Resultados y noticias de baloncesto.</li>
+        <li>Noticias de fútbol dominicano e internacional.</li>
+        <li>Actualizaciones y acontecimientos deportivos.</li>
+      </ul>
+
+      <h3>Nuestra misión</h3>
+
+      <p>
+        Queremos conectar a los aficionados con las noticias que más les
+        interesan, promoviendo el respeto por los atletas, equipos,
+        periodistas y fuentes originales de información.
+      </p>
+
+      <h3>Fuentes de información</h3>
+
+      <p>
+        Cuando una noticia proviene de otro medio, procuramos identificar
+        la fuente original y enlazarla para que el lector pueda consultar
+        la información completa.
+      </p>
+
+      <a class="boton" href="index.html">
+        Volver a las noticias
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <p>
+        <strong>Zona Deportiva RD</strong>
+      </p>
+
+      <p>
+        Noticias deportivas de República Dominicana y el mundo.
+      </p>
+
+      <p>
+        © 2026 Zona Deportiva RD. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
