@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
   <!-- GOOGLE ADSENSE -->
   <script async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6764195930165637"
@@ -11,17 +13,15 @@
     content="ca-pub-6764195930165637">
 
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-
-  <title>Zona Deportiva RD | Noticias Deportivas de República Dominicana</title>
+  <title>Zona Deportiva RD | Noticias Deportivas</title>
 
   <meta name="description"
     content="Zona Deportiva RD: noticias de béisbol, MLB, LIDOM, baloncesto y fútbol de República Dominicana y el mundo.">
 
   <meta name="keywords"
-    content="Zona Deportiva RD, deportes dominicanos, MLB, LIDOM, béisbol, baloncesto, fútbol">
+    content="Zona Deportiva RD, MLB, LIDOM, béisbol, baloncesto, fútbol">
 
   <meta name="author" content="Zona Deportiva RD">
   <meta name="robots" content="index, follow">
@@ -31,15 +31,14 @@
 
   <!-- OPEN GRAPH -->
   <meta property="og:type" content="website">
-  <meta property="og:title"
-    content="Zona Deportiva RD | Noticias Deportivas">
+  <meta property="og:title" content="Zona Deportiva RD | Noticias Deportivas">
   <meta property="og:description"
     content="Las noticias deportivas más importantes de República Dominicana y el mundo.">
   <meta property="og:url"
     content="https://zonadeportivard.github.io/-zona-deportiva-rd/">
   <meta property="og:site_name" content="Zona Deportiva RD">
 
-  <!-- ICONOS -->
+  <!-- FUENTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -47,15 +46,17 @@
     rel="stylesheet">
 
   <style>
+
     :root {
-      --rojo: #e50914;
-      --rojo-oscuro: #a90009;
-      --negro: #080808;
-      --negro-2: #111111;
-      --gris: #1c1c1c;
-      --gris-claro: #eeeeee;
+      --rojo: #ed101b;
+      --rojo-oscuro: #b5000b;
+      --negro: #050505;
+      --negro-2: #101010;
+      --gris: #1b1b1b;
+      --gris-2: #272727;
       --blanco: #ffffff;
       --amarillo: #ffd000;
+      --azul: #1877f2;
     }
 
     * {
@@ -64,12 +65,19 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: "Montserrat", sans-serif;
       background:
-        linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.94)),
-        url("https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1800&q=80")
-        center/cover fixed;
+        radial-gradient(
+          ellipse at top,
+          #252525 0%,
+          #090909 55%,
+          #000000 100%
+        );
       color: var(--blanco);
       min-height: 100vh;
     }
@@ -79,44 +87,53 @@
       text-decoration: none;
     }
 
+    button {
+      font-family: inherit;
+    }
+
     .contenedor {
       width: min(1180px, 92%);
       margin: auto;
     }
 
+    /* =========================
+       ENCABEZADO
+    ========================= */
+
     header {
-      background:
-        linear-gradient(135deg, #050505, #171717);
-      border-bottom: 4px solid var(--rojo);
-      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+      background: rgba(5, 5, 5, 0.98);
+      border-bottom: 3px solid var(--rojo);
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 4px 25px #00000070;
     }
 
     .barra-superior {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       gap: 20px;
-      padding: 18px 0;
+      padding: 17px 0;
     }
 
     .logo {
       display: flex;
       align-items: center;
       gap: 12px;
+      min-width: 0;
     }
 
     .logo-icono {
-      background: var(--rojo);
-      width: 52px;
-      height: 52px;
-      border-radius: 12px;
+      width: 55px;
+      height: 55px;
+      background: linear-gradient(135deg, #ff202b, #b80009);
+      border-radius: 15px;
       display: grid;
       place-items: center;
-      font-size: 28px;
-      box-shadow: 0 0 18px rgba(229, 9, 20, 0.4);
+      font-size: 30px;
+      box-shadow: 0 0 22px #ed101b45;
+      flex-shrink: 0;
     }
 
     .logo h1 {
@@ -126,34 +143,37 @@
       line-height: 1;
     }
 
-    .logo span {
+    .logo h1 span {
       color: var(--rojo);
     }
 
     .logo small {
       display: block;
-      color: #cccccc;
+      color: #bdbdbd;
       font-size: 10px;
       letter-spacing: 2px;
-      margin-top: 5px;
-      font-weight: 700;
+      font-weight: 800;
+      margin-top: 7px;
     }
 
     .boton-facebook {
-      background: #1877f2;
-      color: white;
-      padding: 11px 16px;
-      border-radius: 8px;
+      background: linear-gradient(135deg, #1877f2, #075dcc);
+      padding: 13px 18px;
+      border-radius: 9px;
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 900;
+      white-space: nowrap;
       transition: 0.3s;
       text-align: center;
     }
 
     .boton-facebook:hover {
-      background: #0d5dcc;
       transform: translateY(-2px);
     }
+
+    /* =========================
+       MENÚ
+    ========================= */
 
     nav {
       background: #000000;
@@ -162,91 +182,162 @@
 
     .menu {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 8px;
-      padding: 10px 0;
+      flex-wrap: wrap;
+      gap: 9px;
+      padding: 11px 0;
     }
 
     .menu button {
-      border: 1px solid #333333;
+      border: 1px solid #353535;
       background: #171717;
       color: white;
-      padding: 10px 15px;
-      border-radius: 6px;
+      padding: 11px 18px;
+      border-radius: 8px;
       cursor: pointer;
-      font-family: inherit;
       font-size: 12px;
-      font-weight: 800;
-      transition: 0.3s;
+      font-weight: 900;
+      transition: 0.25s;
     }
 
     .menu button:hover,
     .menu button.activo {
       background: var(--rojo);
       border-color: var(--rojo);
+      box-shadow: 0 0 14px #ed101b35;
     }
 
+    /* =========================
+       PORTADA PRINCIPAL
+    ========================= */
+
     .hero {
-      margin: 28px 0;
-      min-height: 300px;
-      border-radius: 18px;
+      margin: 30px 0 25px;
+      min-height: 410px;
+      border-radius: 20px;
       overflow: hidden;
       position: relative;
       display: flex;
-      align-items: end;
+      align-items: flex-end;
+
       background:
-        linear-gradient(0deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.05)),
-        url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1600&q=85")
+        linear-gradient(
+          0deg,
+          #000000 0%,
+          #000000d9 25%,
+          #00000035 70%,
+          #00000020 100%
+        ),
+        url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1800&q=85")
         center/cover;
-      border: 1px solid #333333;
+
+      border: 1px solid #393939;
+      box-shadow: 0 15px 45px #00000055;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          90deg,
+          #00000055,
+          transparent 70%
+        );
+      pointer-events: none;
     }
 
     .hero-contenido {
-      padding: 35px;
-      max-width: 720px;
+      position: relative;
+      z-index: 1;
+      padding: 38px;
+      max-width: 760px;
     }
 
     .etiqueta {
       display: inline-block;
       background: var(--rojo);
       color: white;
-      padding: 7px 12px;
-      border-radius: 5px;
+      padding: 8px 14px;
+      border-radius: 6px;
       font-size: 11px;
       font-weight: 900;
-      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
       text-transform: uppercase;
     }
 
     .hero h2 {
       font-family: "Anton", sans-serif;
-      font-size: clamp(32px, 6vw, 64px);
-      line-height: 1;
+      font-size: clamp(38px, 6vw, 70px);
+      line-height: 1.02;
       letter-spacing: 1px;
       text-transform: uppercase;
+      text-shadow: 3px 4px 0 #00000050;
+    }
+
+    .hero h2 span {
+      color: var(--rojo);
     }
 
     .hero p {
-      color: #dddddd;
-      margin-top: 14px;
-      font-size: 14px;
-      line-height: 1.6;
+      color: #e2e2e2;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-top: 18px;
+      max-width: 600px;
     }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 23px;
+    }
+
+    .hero-badges span {
+      background: #ffffff12;
+      border: 1px solid #ffffff35;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 10px;
+      font-weight: 900;
+      color: #ffffff;
+    }
+
+    /* =========================
+       ANUNCIOS
+    ========================= */
+
+    .anuncio {
+      background: #101010;
+      border: 1px dashed #363636;
+      border-radius: 12px;
+      min-height: 90px;
+      margin: 25px 0;
+      padding: 10px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* =========================
+       TÍTULOS
+    ========================= */
 
     .titulo-seccion {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 15px;
-      margin: 30px 0 18px;
+      margin: 35px 0 20px;
+      padding-left: 15px;
       border-left: 6px solid var(--rojo);
-      padding-left: 14px;
     }
 
     .titulo-seccion h2 {
       font-family: "Anton", sans-serif;
-      font-size: 32px;
+      font-size: 34px;
       letter-spacing: 1px;
       text-transform: uppercase;
     }
@@ -254,19 +345,12 @@
     .titulo-seccion span {
       color: var(--amarillo);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 900;
     }
 
-    .anuncio {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px dashed #444444;
-      border-radius: 10px;
-      min-height: 90px;
-      margin: 25px 0;
-      padding: 10px;
-      text-align: center;
-      overflow: hidden;
-    }
+    /* =========================
+       NOTICIAS
+    ========================= */
 
     .noticias {
       display: grid;
@@ -275,32 +359,32 @@
     }
 
     .tarjeta {
-      background:
-        linear-gradient(145deg, #191919, #0d0d0d);
-      border: 1px solid #333333;
-      border-radius: 14px;
+      background: linear-gradient(145deg, #1c1c1c, #0b0b0b);
+      border: 1px solid #343434;
+      border-radius: 15px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: 0.3s;
       min-width: 0;
+      transition: 0.3s;
     }
 
     .tarjeta:hover {
-      transform: translateY(-6px);
+      transform: translateY(-5px);
       border-color: var(--rojo);
-      box-shadow: 0 10px 25px rgba(229, 9, 20, 0.18);
+      box-shadow: 0 12px 28px #ed101b20;
     }
 
     .imagen-noticia {
       width: 100%;
-      height: 205px;
+      height: 210px;
       object-fit: cover;
       background: #222222;
+      display: block;
     }
 
     .tarjeta-contenido {
-      padding: 18px;
+      padding: 19px;
       display: flex;
       flex-direction: column;
       flex: 1;
@@ -312,48 +396,46 @@
       font-weight: 900;
       letter-spacing: 1px;
       text-transform: uppercase;
-      margin-bottom: 9px;
+      margin-bottom: 10px;
     }
 
     .tarjeta h3 {
       font-size: 18px;
-      line-height: 1.3;
+      line-height: 1.4;
       margin-bottom: 12px;
     }
 
     .descripcion {
-      color: #c5c5c5;
+      color: #c3c3c3;
       font-size: 13px;
-      line-height: 1.65;
+      line-height: 1.7;
       margin-bottom: 15px;
     }
 
     .datos {
       color: #999999;
       font-size: 11px;
-      line-height: 1.7;
+      line-height: 1.8;
       margin-top: auto;
-      padding-top: 12px;
-      border-top: 1px solid #2d2d2d;
+      padding-top: 13px;
+      border-top: 1px solid #303030;
     }
 
     .acciones {
       display: flex;
       gap: 8px;
-      margin-top: 15px;
+      margin-top: 16px;
     }
 
     .leer,
     .compartir {
       flex: 1;
-      border: none;
-      border-radius: 6px;
-      padding: 11px 8px;
+      border-radius: 7px;
+      padding: 12px 7px;
       font-size: 11px;
       font-weight: 900;
       text-align: center;
-      cursor: pointer;
-      font-family: inherit;
+      transition: 0.2s;
     }
 
     .leer {
@@ -366,32 +448,36 @@
     }
 
     .compartir {
-      background: #1877f2;
+      background: var(--azul);
       color: white;
     }
 
     .compartir:hover {
-      background: #0d5dcc;
+      background: #075dcc;
     }
 
     .estado {
       text-align: center;
-      color: #cccccc;
+      color: #cfcfcf;
       padding: 35px 10px;
       font-size: 14px;
     }
 
+    /* =========================
+       FOOTER
+    ========================= */
+
     footer {
-      margin-top: 55px;
+      margin-top: 60px;
       background: #050505;
       border-top: 4px solid var(--rojo);
-      padding: 35px 0;
+      padding: 38px 0;
       text-align: center;
     }
 
     footer h2 {
       font-family: "Anton", sans-serif;
-      font-size: 28px;
+      font-size: 30px;
       margin-bottom: 10px;
     }
 
@@ -402,53 +488,93 @@
     footer p {
       color: #999999;
       font-size: 12px;
-      line-height: 1.8;
+      line-height: 1.9;
     }
 
     .volver-arriba {
       display: inline-block;
-      margin-top: 18px;
+      margin-top: 20px;
       color: var(--amarillo);
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 900;
     }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
 
     @media (max-width: 900px) {
       .noticias {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      .hero {
+        min-height: 370px;
+      }
     }
 
     @media (max-width: 600px) {
+
       .barra-superior {
-        align-items: flex-start;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo {
+        gap: 9px;
       }
 
       .logo-icono {
         width: 43px;
         height: 43px;
         font-size: 23px;
+        border-radius: 11px;
       }
 
       .logo h1 {
-        font-size: 26px;
+        font-size: 25px;
+      }
+
+      .logo small {
+        font-size: 8px;
+        letter-spacing: 1px;
       }
 
       .boton-facebook {
+        padding: 10px 11px;
         font-size: 10px;
-        padding: 10px;
+      }
+
+      .menu {
+        gap: 6px;
+      }
+
+      .menu button {
+        padding: 9px 11px;
+        font-size: 10px;
       }
 
       .hero {
-        min-height: 330px;
+        min-height: 390px;
+        border-radius: 15px;
+        margin-top: 22px;
       }
 
       .hero-contenido {
-        padding: 23px;
+        padding: 24px;
       }
 
       .hero h2 {
-        font-size: 39px;
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 13px;
+      }
+
+      .hero-badges span {
+        font-size: 9px;
+        padding: 7px 9px;
       }
 
       .noticias {
@@ -456,28 +582,39 @@
       }
 
       .titulo-seccion h2 {
-        font-size: 27px;
+        font-size: 28px;
       }
 
-      .menu button {
-        padding: 9px 11px;
-        font-size: 10px;
+      .titulo-seccion span {
+        font-size: 9px;
       }
+
+      .imagen-noticia {
+        height: 220px;
+      }
+
     }
+
   </style>
 </head>
 
 <body id="inicio">
 
+  <!-- ENCABEZADO -->
+
   <header>
+
     <div class="contenedor barra-superior">
+
       <a href="#inicio" class="logo">
+
         <div class="logo-icono">⚾</div>
 
         <div>
           <h1>ZONA <span>DEPORTIVA</span></h1>
           <small>RD · PASIÓN POR EL DEPORTE</small>
         </div>
+
       </a>
 
       <a
@@ -485,39 +622,89 @@
         href="https://www.facebook.com/sharer/sharer.php?u=https://zonadeportivard.github.io/-zona-deportiva-rd/"
         target="_blank"
         rel="noopener noreferrer">
+
         Compartir página
+
       </a>
+
     </div>
 
+    <!-- MENÚ -->
+
     <nav>
+
       <div class="contenedor menu">
-        <button class="activo" data-categoria="TODAS">Todas</button>
-        <button data-categoria="MLB">MLB</button>
-        <button data-categoria="LIDOM">LIDOM</button>
-        <button data-categoria="BALONCESTO">Baloncesto</button>
-        <button data-categoria="FÚTBOL">Fútbol</button>
-        <button data-categoria="BÉISBOL">Béisbol</button>
+
+        <button class="activo" data-categoria="TODAS">
+          Todas
+        </button>
+
+        <button data-categoria="MLB">
+          MLB
+        </button>
+
+        <button data-categoria="LIDOM">
+          LIDOM
+        </button>
+
+        <button data-categoria="BALONCESTO">
+          Baloncesto
+        </button>
+
+        <button data-categoria="FÚTBOL">
+          Fútbol
+        </button>
+
+        <button data-categoria="BÉISBOL">
+          Béisbol
+        </button>
+
       </div>
+
     </nav>
+
   </header>
+
+  <!-- CONTENIDO -->
 
   <main class="contenedor">
 
-    <section class="hero">
-      <div class="hero-contenido">
-        <span class="etiqueta">Noticias deportivas</span>
+    <!-- PORTADA -->
 
-        <h2>La pasión deportiva dominicana</h2>
+    <section class="hero">
+
+      <div class="hero-contenido">
+
+        <span class="etiqueta">
+          🔥 NOTICIAS DEPORTIVAS
+        </span>
+
+        <h2>
+          LA PASIÓN<br>
+          <span>DEPORTIVA</span><br>
+          DOMINICANA
+        </h2>
 
         <p>
-          Toda la actualidad del béisbol, MLB, LIDOM, baloncesto,
-          fútbol y mucho más en un solo lugar.
+          Toda la actualidad del béisbol, MLB, LIDOM,
+          baloncesto, fútbol y mucho más en un solo lugar.
         </p>
+
+        <div class="hero-badges">
+          <span>⚾ BÉISBOL</span>
+          <span>🏀 BALONCESTO</span>
+          <span>⚽ FÚTBOL</span>
+          <span>🇩🇴 RD</span>
+        </div>
+
       </div>
+
     </section>
 
     <!-- ANUNCIO ADSENSE -->
+
     <div class="anuncio">
+
       <ins class="adsbygoogle"
         style="display:block"
         data-ad-client="ca-pub-6764195930165637"
@@ -528,12 +715,19 @@
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+
     </div>
 
+    <!-- NOTICIAS -->
+
     <section>
+
       <div class="titulo-seccion">
+
         <h2>Últimas noticias</h2>
-        <span>ACTUALIZADO</span>
+
+        <span>● ACTUALIZADO</span>
+
       </div>
 
       <div id="estado" class="estado">
@@ -541,10 +735,13 @@
       </div>
 
       <div id="noticias" class="noticias"></div>
+
     </section>
 
-    <!-- ANUNCIO ADSENSE -->
+    <!-- SEGUNDO ANUNCIO -->
+
     <div class="anuncio">
+
       <ins class="adsbygoogle"
         style="display:block"
         data-ad-client="ca-pub-6764195930165637"
@@ -555,13 +752,20 @@
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+
     </div>
 
   </main>
 
+  <!-- PIE DE PÁGINA -->
+
   <footer>
+
     <div class="contenedor">
-      <h2>ZONA <span>DEPORTIVA RD</span></h2>
+
+      <h2>
+        ZONA <span>DEPORTIVA RD</span>
+      </h2>
 
       <p>
         Noticias deportivas de República Dominicana y el mundo.
@@ -574,13 +778,23 @@
       <a href="#inicio" class="volver-arriba">
         Volver arriba ↑
       </a>
+
     </div>
+
   </footer>
 
+  <!-- CARGAR NOTICIAS -->
+
   <script>
-    const contenedorNoticias = document.getElementById("noticias");
-    const estado = document.getElementById("estado");
-    const botones = document.querySelectorAll("[data-categoria]");
+
+    const contenedorNoticias =
+      document.getElementById("noticias");
+
+    const estado =
+      document.getElementById("estado");
+
+    const botones =
+      document.querySelectorAll("[data-categoria]");
 
     let todasLasNoticias = [];
 
@@ -588,31 +802,51 @@
       "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1000&q=80";
 
     function escaparHTML(texto) {
+
       return String(texto || "")
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
+
     }
 
     function crearTarjeta(noticia) {
-      const imagen = noticia.imagen && noticia.imagen.trim()
-        ? noticia.imagen
-        : imagenPredeterminada;
 
-      const titulo = escaparHTML(noticia.titulo);
-      const categoria = escaparHTML(noticia.categoria);
-      const descripcion = escaparHTML(noticia.descripcion);
-      const fecha = escaparHTML(noticia.fecha);
-      const fuente = escaparHTML(noticia.fuente);
-      const url = escaparHTML(noticia.url);
-      const urlCompartir = encodeURIComponent(
-        noticia.url || "https://zonadeportivard.github.io/-zona-deportiva-rd/"
-      );
+      const imagen =
+        noticia.imagen && noticia.imagen.trim()
+          ? noticia.imagen
+          : imagenPredeterminada;
+
+      const titulo =
+        escaparHTML(noticia.titulo);
+
+      const categoria =
+        escaparHTML(noticia.categoria);
+
+      const descripcion =
+        escaparHTML(noticia.descripcion);
+
+      const fecha =
+        escaparHTML(noticia.fecha);
+
+      const fuente =
+        escaparHTML(noticia.fuente);
+
+      const url =
+        escaparHTML(noticia.url);
+
+      const urlCompartir =
+        encodeURIComponent(
+          noticia.url ||
+          "https://zonadeportivard.github.io/-zona-deportiva-rd/"
+        );
 
       return `
+
         <article class="tarjeta">
+
           <img
             class="imagen-noticia"
             src="${imagen}"
@@ -621,11 +855,18 @@
             onerror="this.src='${imagenPredeterminada}'">
 
           <div class="tarjeta-contenido">
-            <div class="categoria">${categoria}</div>
 
-            <h3>${titulo}</h3>
+            <div class="categoria">
+              ${categoria}
+            </div>
 
-            <p class="descripcion">${descripcion}</p>
+            <h3>
+              ${titulo}
+            </h3>
+
+            <p class="descripcion">
+              ${descripcion}
+            </p>
 
             <div class="datos">
               <strong>Fecha:</strong> ${fecha}<br>
@@ -633,12 +874,15 @@
             </div>
 
             <div class="acciones">
+
               <a
                 class="leer"
                 href="${url}"
                 target="_blank"
                 rel="noopener noreferrer">
+
                 Leer fuente
+
               </a>
 
               <a
@@ -646,67 +890,115 @@
                 href="https://www.facebook.com/sharer/sharer.php?u=${urlCompartir}"
                 target="_blank"
                 rel="noopener noreferrer">
+
                 Facebook
+
               </a>
+
             </div>
+
           </div>
+
         </article>
+
       `;
+
     }
 
     function mostrarNoticias(categoria = "TODAS") {
-      const noticiasFiltradas = categoria === "TODAS"
-        ? todasLasNoticias
-        : todasLasNoticias.filter(noticia =>
-            String(noticia.categoria || "").toUpperCase() === categoria
-          );
+
+      const noticiasFiltradas =
+        categoria === "TODAS"
+          ? todasLasNoticias
+          : todasLasNoticias.filter(noticia =>
+              String(noticia.categoria || "")
+                .toUpperCase() === categoria
+            );
 
       if (!noticiasFiltradas.length) {
+
         contenedorNoticias.innerHTML = "";
+
         estado.style.display = "block";
-        estado.textContent = "No hay noticias en esta categoría.";
+
+        estado.textContent =
+          "No hay noticias en esta categoría.";
+
         return;
+
       }
 
       estado.style.display = "none";
 
-      contenedorNoticias.innerHTML = noticiasFiltradas
-        .map(crearTarjeta)
-        .join("");
+      contenedorNoticias.innerHTML =
+        noticiasFiltradas
+          .map(crearTarjeta)
+          .join("");
+
     }
 
     botones.forEach(boton => {
+
       boton.addEventListener("click", () => {
-        botones.forEach(item => item.classList.remove("activo"));
+
+        botones.forEach(item =>
+          item.classList.remove("activo")
+        );
+
         boton.classList.add("activo");
 
-        mostrarNoticias(boton.dataset.categoria);
+        mostrarNoticias(
+          boton.dataset.categoria
+        );
+
       });
+
     });
 
     fetch("noticias.json")
+
       .then(respuesta => {
+
         if (!respuesta.ok) {
-          throw new Error("No se pudo cargar noticias.json");
+
+          throw new Error(
+            "No se pudo cargar noticias.json"
+          );
+
         }
 
         return respuesta.json();
+
       })
+
       .then(noticias => {
+
         if (!Array.isArray(noticias)) {
-          throw new Error("El archivo noticias.json no tiene un formato válido");
+
+          throw new Error(
+            "El archivo noticias.json no tiene un formato válido"
+          );
+
         }
 
         todasLasNoticias = noticias;
+
         mostrarNoticias();
+
       })
+
       .catch(error => {
+
         console.error(error);
 
         estado.style.display = "block";
+
         estado.textContent =
-          "No se pudieron cargar las noticias. Revisa que noticias.json esté en el mismo lugar que index.html.";
+          "No se pudieron cargar las noticias. " +
+          "Revisa que noticias.json esté en el mismo lugar que index.html.";
+
       });
+
   </script>
 
 </body>
