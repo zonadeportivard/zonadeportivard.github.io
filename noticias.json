@@ -1,110 +1,92 @@
 [
 {
 “categoria”: “MLB”,
-“titulo”: “Los Dodgers conquistan su quinto título divisional consecutivo”,
-“descripcion”: “Los Ángeles aseguró nuevamente el título de la División Oeste de la Liga Nacional, ampliando su dominio en la división.”,
+“titulo”: “Las Grandes Ligas continúan con una intensa temporada”,
+“descripcion”: “Los equipos de MLB siguen compitiendo por posiciones importantes durante la temporada.”,
 “fecha”: “18 de septiembre de 2026”,
-“fuente”: “Diario Libre”,
-“imagen”: “https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://www.diariolibre.com/deportes/beisbol”
+“fuente”: “MLB”,
+“imagen”: “https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80”,
+“url”: “https://www.mlb.com/”
 },
 {
 “categoria”: “MLB”,
-“titulo”: “Junior Caminero continúa destacándose con Tampa Bay”,
-“descripcion”: “El joven jugador dominicano continúa dejando actuaciones importantes durante la temporada de Grandes Ligas.”,
+“titulo”: “Los jugadores dominicanos siguen destacándose en MLB”,
+“descripcion”: “El talento dominicano continúa teniendo una presencia importante en las Grandes Ligas.”,
 “fecha”: “18 de septiembre de 2026”,
-“fuente”: “Diario Libre”,
-“imagen”: “https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://www.diariolibre.com/deportes/beisbol”
-},
-{
-“categoria”: “MLB”,
-“titulo”: “Elly De La Cruz se acerca a una temporada histórica”,
-“descripcion”: “El dominicano de Cincinnati continúa acercándose a una importante cifra de cuadrangulares durante la campaña.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “Diario Libre”,
-“imagen”: “https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://www.diariolibre.com/deportes/beisbol”
+“fuente”: “MLB”,
+“imagen”: “https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1200&q=80”,
+“url”: “https://www.mlb.com/”
 },
 {
 “categoria”: “LIDOM”,
-“titulo”: “LIDOM presenta el calendario oficial de la temporada 2026-2027”,
-“descripcion”: “La Liga Dominicana de Béisbol ya tiene definido el calendario para el próximo campeonato invernal.”,
+“titulo”: “LIDOM se prepara para una nueva temporada”,
+“descripcion”: “La pelota dominicana comienza a prepararse para una nueva temporada de béisbol invernal.”,
 “fecha”: “18 de septiembre de 2026”,
 “fuente”: “LIDOM”,
-“imagen”: “https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://lidom.com/seccion/lidom.html”
+“imagen”: “https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=80”,
+“url”: “https://lidom.com/”
+},
+{
+“categoria”: “BÉISBOL”,
+“titulo”: “La pasión por el béisbol sigue creciendo en República Dominicana”,
+“descripcion”: “Los fanáticos dominicanos continúan atentos a las principales noticias de la pelota.”,
+“fecha”: “18 de septiembre de 2026”,
+“fuente”: “Zona Deportiva RD”,
+“imagen”: “https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1200&q=80”,
+“url”: “https://www.mlb.com/”
+},
+{
+“categoria”: “BALONCESTO”,
+“titulo”: “El baloncesto continúa captando la atención de los fanáticos”,
+“descripcion”: “Las principales competencias de baloncesto mantienen una intensa actividad deportiva.”,
+“fecha”: “18 de septiembre de 2026”,
+“fuente”: “FIBA”,
+“imagen”: “https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80”,
+“url”: “https://www.fiba.basketball/”
+},
+{
+“categoria”: “FÚTBOL”,
+“titulo”: “El fútbol internacional continúa con grandes jornadas”,
+“descripcion”: “Los clubes y selecciones mantienen una intensa actividad en el fútbol internacional.”,
+“fecha”: “18 de septiembre de 2026”,
+“fuente”: “FIFA”,
+“imagen”: “https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80”,
+“url”: “https://www.fifa.com/”
 },
 {
 “categoria”: “LIDOM”,
-“titulo”: “Los equipos de LIDOM continúan preparando sus planteles”,
-“descripcion”: “Los equipos de la pelota dominicana siguen anunciando movimientos y contrataciones de cara a la próxima temporada.”,
+“titulo”: “Los equipos dominicanos preparan sus planteles”,
+“descripcion”: “Los equipos de la pelota dominicana continúan trabajando en sus preparativos para la próxima temporada.”,
 “fecha”: “18 de septiembre de 2026”,
 “fuente”: “LIDOM”,
-“imagen”: “https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://lidom.com/seccion/lidom.html”
-},
-{
-“categoria”: “BALONCESTO”,
-“titulo”: “Los Knicks suspenden la venta de boletos tras un error en los precios”,
-“descripcion”: “El equipo de Nueva York suspendió temporalmente la venta después de que un error mostrara precios superiores a los previstos.”,
-“fecha”: “17 de septiembre de 2026”,
-“fuente”: “Diario Libre”,
-“imagen”: “https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://www.diariolibre.com/deportes/baloncesto”
-},
-{
-“categoria”: “BALONCESTO”,
-“titulo”: “Mauricio Báez y San Carlos abren el torneo de baloncesto distrital”,
-“descripcion”: “Los tradicionales equipos capitalinos dieron inicio a una nueva edición del torneo de baloncesto del Distrito Nacional.”,
-“fecha”: “17 de septiembre de 2026”,
-“fuente”: “Diario Libre”,
-“imagen”: “https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://www.diariolibre.com/deportes/baloncesto”
-},
-{
-“categoria”: “FÚTBOL”,
-“titulo”: “Portmore United elimina al Cibao FC de la Copa del Caribe”,
-“descripcion”: “El conjunto dominicano quedó eliminado después de caer 2-1 ante Portmore United en la competición de Concacaf.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “Comité Olímpico Dominicano”,
-“imagen”: “https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://colimdo.org/noticias/portmore-united-elimina-al-cibao-fc-de-la-copa-del-caribe-concacaf/”
-},
-{
-“categoria”: “FÚTBOL”,
-“titulo”: “Portmore asegura su puesto en las semifinales de la Copa Caribe”,
-“descripcion”: “El conjunto jamaiquino avanzó a las semifinales después de superar su serie ante equipos de la región.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “El Caribe”,
-“imagen”: “https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://www.elcaribe.com.do/deportes/futbol/futbol-nacional/portmore-asegura-puesto-en-semifinal-copa-caribe/”
+“imagen”: “https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80”,
+“url”: “https://lidom.com/”
 },
 {
 “categoria”: “BÉISBOL”,
-“titulo”: “La selección dominicana U15 se prepara para la Copa Mundial”,
-“descripcion”: “El equipo dominicano continúa su preparación para representar al país en la Copa Mundial de Béisbol U15.”,
-“fecha”: “17 de septiembre de 2026”,
-“fuente”: “Diario Libre”,
-“imagen”: “https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://www.diariolibre.com/deportes/beisbol”
-},
-{
-“categoria”: “BÉISBOL”,
-“titulo”: “Licey anuncia a CJ Van Eyk como refuerzo”,
-“descripcion”: “Los Tigres del Licey continúan reforzando su plantilla con miras a la próxima temporada de béisbol invernal.”,
-“fecha”: “16 de septiembre de 2026”,
-“fuente”: “El Caribe”,
-“imagen”: “https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://www.elcaribe.com.do/deportes/beisbol/pelota-invernal/licey-anuncia-a-cj-van-eykcomo-refuerzo/”
-},
-{
-“categoria”: “POLIDEPORTIVO”,
-“titulo”: “Marileidy Paulino corre en Londres”,
-“descripcion”: “La campeona dominicana vuelve a competir en una importante jornada internacional de atletismo.”,
+“titulo”: “República Dominicana mantiene su tradición beisbolera”,
+“descripcion”: “El béisbol continúa siendo uno de los deportes favoritos de los dominicanos.”,
 “fecha”: “18 de septiembre de 2026”,
-“fuente”: “El Caribe”,
-“imagen”: “https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85”,
-“url”: “https://www.elcaribe.com.do/deportes/polideportivo/marileidy-paulino-corre-hoy-en-londres/”
+“fuente”: “Zona Deportiva RD”,
+“imagen”: “https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80”,
+“url”: “https://www.mlb.com/”
+},
+{
+“categoria”: “BALONCESTO”,
+“titulo”: “La actualidad del baloncesto sigue avanzando”,
+“descripcion”: “Los aficionados continúan pendientes de las principales noticias y competencias de baloncesto.”,
+“fecha”: “18 de septiembre de 2026”,
+“fuente”: “FIBA”,
+“imagen”: “https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=1200&q=80”,
+“url”: “https://www.fiba.basketball/”
+},
+{
+“categoria”: “FÚTBOL”,
+“titulo”: “Los fanáticos siguen atentos a la actualidad del fútbol”,
+“descripcion”: “La actividad internacional mantiene a los seguidores pendientes de sus equipos favoritos.”,
+“fecha”: “18 de septiembre de 2026”,
+“fuente”: “FIFA”,
+“imagen”: “https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=1200&q=80”,
+“url”: “https://www.fifa.com/”
 }
 ]
