@@ -723,105 +723,74 @@ footer p{
 
 <script>
 
-const noticias = [
+let noticias = [];
 
-  {
-    categoria:"MLB",
-    titulo:"La temporada de MLB entra en una etapa decisiva",
-    descripcion:"Los equipos de las Grandes Ligas continúan luchando por posiciones importantes en la recta final de la temporada.",
-    fecha:"18 de septiembre de 2026",
-    fuente:"MLB",
-    imagen:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=85",
-    url:"https://www.mlb.com/"
-  },
+/* =========================
+   CARGAR NOTICIAS.JSON
+========================= */
 
-  {
-    categoria:"BÉISBOL",
-    titulo:"El béisbol continúa siendo protagonista entre los fanáticos dominicanos",
-    descripcion:"La pasión por el béisbol sigue creciendo entre los seguidores dominicanos dentro y fuera del país.",
-    fecha:"18 de septiembre de 2026",
-    fuente:"Zona Deportiva RD",
-    imagen:"https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=85",
-    url:"https://www.mlb.com/"
-  },
+fetch("./noticias.json")
+  .then(respuesta => {
 
-  {
-    categoria:"BALONCESTO",
-    titulo:"El baloncesto mantiene la atención de los fanáticos deportivos",
-    descripcion:"La actualidad del baloncesto continúa generando interés entre los seguidores del deporte.",
-    fecha:"18 de septiembre de 2026",
-    fuente:"FIBA",
-    imagen:"https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=85",
-    url:"https://www.fiba.basketball/"
-  },
+    if(!respuesta.ok){
+      throw new Error("No se pudo cargar noticias.json");
+    }
 
-  {
-    categoria:"FÚTBOL",
-    titulo:"El fútbol internacional continúa con grandes jornadas",
-    descripcion:"Los principales torneos y clubes del fútbol internacional mantienen una intensa actividad deportiva.",
-    fecha:"18 de septiembre de 2026",
-    fuente:"FIFA",
-    imagen:"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=85",
-    url:"https://www.fifa.com/"
-  },
+    return respuesta.json();
 
-  {
-    categoria:"LIDOM",
-    titulo:"La pelota dominicana comienza a calentar motores",
-    descripcion:"Los seguidores dominicanos esperan con entusiasmo las novedades relacionadas con el béisbol local.",
-    fecha:"18 de septiembre de 2026",
-    fuente:"LIDOM",
-    imagen:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=85",
-    url:"https://lidom.com/"
-  },
+  })
+  .then(datos => {
 
-  {
-    categoria:"MLB",
-    titulo:"Los jugadores dominicanos siguen siendo protagonistas en MLB",
-    descripcion:"El talento dominicano continúa teniendo presencia destacada en las Grandes Ligas.",
-    fecha:"18 de septiembre de 2026",
-    fuente:"MLB",
-    imagen:"https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85",
-    url:"https://www.mlb.com/"
-  },
+    noticias = datos;
 
-  {
-    categoria:"BÉISBOL",
-    titulo:"La pasión por el béisbol se mantiene fuerte en República Dominicana",
-    descripcion:"Los fanáticos dominicanos continúan siguiendo cada movimiento de sus jugadores y equipos favoritos.",
-    fecha:"18 de septiembre de 2026",
-    fuente:"Zona Deportiva RD",
-    imagen:"https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1200&q=85",
-    url:"https://www.mlb.com/"
-  },
+    mostrarNoticias(noticias);
 
-  {
-    categoria:"BALONCESTO",
-    titulo:"La actualidad del baloncesto internacional sigue avanzando",
-    descripcion:"Las principales competencias continúan ofreciendo jornadas de gran interés para los aficionados.",
-    fecha:"18 de septiembre de 2026",
-    fuente:"FIBA",
-    imagen:"https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=1200&q=85",
-    url:"https://www.fiba.basketball/"
-  },
+  })
+  .catch(error => {
 
-  {
-    categoria:"FÚTBOL",
-    titulo:"Los fanáticos siguen atentos a la actualidad del fútbol",
-    descripcion:"El calendario internacional mantiene una intensa actividad para clubes y selecciones.",
-    fecha:"18 de septiembre de 2026",
-    fuente:"FIFA",
-    imagen:"https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=1200&q=85",
-    url:"https://www.fifa.com/"
-  }
+    console.error("Error cargando noticias:", error);
 
-];
+    document.getElementById("noticias").innerHTML = `
+      <p style="
+        color:#ff202b;
+        font-weight:900;
+        text-align:center;
+        padding:30px;
+        grid-column:1/-1;
+      ">
+        No se pudieron cargar las últimas noticias.
+      </p>
+    `;
+
+  });
+
+
+/* =========================
+   MOSTRAR NOTICIAS
+========================= */
 
 function mostrarNoticias(lista){
 
   const contenedor=document.getElementById("noticias");
 
   contenedor.innerHTML="";
+
+  if(!lista || lista.length===0){
+
+    contenedor.innerHTML=`
+      <p style="
+        color:#aaa;
+        text-align:center;
+        padding:30px;
+        grid-column:1/-1;
+      ">
+        No hay noticias disponibles.
+      </p>
+    `;
+
+    return;
+
+  }
 
   lista.forEach(noticia=>{
 
@@ -901,6 +870,11 @@ function mostrarNoticias(lista){
 
 }
 
+
+/* =========================
+   FILTRAR NOTICIAS
+========================= */
+
 function filtrarNoticias(categoria,boton){
 
   document
@@ -926,18 +900,25 @@ function filtrarNoticias(categoria,boton){
 
 }
 
-mostrarNoticias(noticias);
 
-try{
+/* =========================
+   ADSENSE
+========================= */
 
-  (adsbygoogle=window.adsbygoogle||[]).push({});
-  (adsbygoogle=window.adsbygoogle||[]).push({});
+window.addEventListener("load",()=>{
 
-}catch(error){
+  try{
 
-  console.log("AdSense pendiente de carga.");
+    (adsbygoogle=window.adsbygoogle||[]).push({});
+    (adsbygoogle=window.adsbygoogle||[]).push({});
 
-}
+  }catch(error){
+
+    console.log("AdSense pendiente de carga.");
+
+  }
+
+});
 
 </script>
 
