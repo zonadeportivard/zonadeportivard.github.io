@@ -1,1005 +1,945 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 
-  <!-- GOOGLE ADSENSE -->
-  <script async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6764195930165637"
-    crossorigin="anonymous">
-  </script>
-
-  <meta name="google-adsense-account"
-    content="ca-pub-6764195930165637">
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Zona Deportiva RD | Noticias Deportivas</title>
-
-  <meta name="description"
-    content="Zona Deportiva RD: noticias de béisbol, MLB, LIDOM, baloncesto y fútbol de República Dominicana y el mundo.">
-
-  <meta name="keywords"
-    content="Zona Deportiva RD, MLB, LIDOM, béisbol, baloncesto, fútbol">
-
-  <meta name="author" content="Zona Deportiva RD">
-  <meta name="robots" content="index, follow">
-
-  <link rel="canonical"
-    href="https://zonadeportivard.github.io/-zona-deportiva-rd/">
-
-  <!-- OPEN GRAPH -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Zona Deportiva RD | Noticias Deportivas">
-  <meta property="og:description"
-    content="Las noticias deportivas más importantes de República Dominicana y el mundo.">
-  <meta property="og:url"
-    content="https://zonadeportivard.github.io/-zona-deportiva-rd/">
-  <meta property="og:site_name" content="Zona Deportiva RD">
-
-  <!-- FUENTES -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-
-  <style>
-
-    :root {
-      --rojo: #ed101b;
-      --rojo-oscuro: #b5000b;
-      --negro: #050505;
-      --negro-2: #101010;
-      --gris: #1b1b1b;
-      --gris-2: #272727;
-      --blanco: #ffffff;
-      --amarillo: #ffd000;
-      --azul: #1877f2;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: "Montserrat", sans-serif;
-      background:
-        radial-gradient(
-          ellipse at top,
-          #252525 0%,
-          #090909 55%,
-          #000000 100%
-        );
-      color: var(--blanco);
-      min-height: 100vh;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    button {
-      font-family: inherit;
-    }
-
-    .contenedor {
-      width: min(1180px, 92%);
-      margin: auto;
-    }
-
-    /* =========================
-       ENCABEZADO
-    ========================= */
-
-    header {
-      background: rgba(5, 5, 5, 0.98);
-      border-bottom: 3px solid var(--rojo);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 25px #00000070;
-    }
-
-    .barra-superior {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 17px 0;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 0;
-    }
-
-    .logo-icono {
-      width: 55px;
-      height: 55px;
-      background: linear-gradient(135deg, #ff202b, #b80009);
-      border-radius: 15px;
-      display: grid;
-      place-items: center;
-      font-size: 30px;
-      box-shadow: 0 0 22px #ed101b45;
-      flex-shrink: 0;
-    }
-
-    .logo h1 {
-      font-family: "Anton", sans-serif;
-      font-size: clamp(25px, 4vw, 40px);
-      letter-spacing: 1px;
-      line-height: 1;
-    }
-
-    .logo h1 span {
-      color: var(--rojo);
-    }
-
-    .logo small {
-      display: block;
-      color: #bdbdbd;
-      font-size: 10px;
-      letter-spacing: 2px;
-      font-weight: 800;
-      margin-top: 7px;
-    }
-
-    .boton-facebook {
-      background: linear-gradient(135deg, #1877f2, #075dcc);
-      padding: 13px 18px;
-      border-radius: 9px;
-      font-size: 12px;
-      font-weight: 900;
-      white-space: nowrap;
-      transition: 0.3s;
-      text-align: center;
-    }
-
-    .boton-facebook:hover {
-      transform: translateY(-2px);
-    }
-
-    /* =========================
-       MENÚ
-    ========================= */
-
-    nav {
-      background: #000000;
-      border-top: 1px solid #292929;
-    }
-
-    .menu {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 9px;
-      padding: 11px 0;
-    }
-
-    .menu button {
-      border: 1px solid #353535;
-      background: #171717;
-      color: white;
-      padding: 11px 18px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 12px;
-      font-weight: 900;
-      transition: 0.25s;
-    }
-
-    .menu button:hover,
-    .menu button.activo {
-      background: var(--rojo);
-      border-color: var(--rojo);
-      box-shadow: 0 0 14px #ed101b35;
-    }
-
-    /* =========================
-       PORTADA PRINCIPAL
-    ========================= */
-
-    .hero {
-      margin: 30px 0 25px;
-      min-height: 410px;
-      border-radius: 20px;
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      align-items: flex-end;
-
-      background:
-        linear-gradient(
-          0deg,
-          #000000 0%,
-          #000000d9 25%,
-          #00000035 70%,
-          #00000020 100%
-        ),
-        url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1800&q=85")
-        center/cover;
-
-      border: 1px solid #393939;
-      box-shadow: 0 15px 45px #00000055;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(
-          90deg,
-          #00000055,
-          transparent 70%
-        );
-      pointer-events: none;
-    }
-
-    .hero-contenido {
-      position: relative;
-      z-index: 1;
-      padding: 38px;
-      max-width: 760px;
-    }
-
-    .etiqueta {
-      display: inline-block;
-      background: var(--rojo);
-      color: white;
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 0.5px;
-      margin-bottom: 15px;
-      text-transform: uppercase;
-    }
-
-    .hero h2 {
-      font-family: "Anton", sans-serif;
-      font-size: clamp(38px, 6vw, 70px);
-      line-height: 1.02;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-shadow: 3px 4px 0 #00000050;
-    }
-
-    .hero h2 span {
-      color: var(--rojo);
-    }
-
-    .hero p {
-      color: #e2e2e2;
-      font-size: 15px;
-      line-height: 1.7;
-      margin-top: 18px;
-      max-width: 600px;
-    }
-
-    .hero-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 23px;
-    }
-
-    .hero-badges span {
-      background: #ffffff12;
-      border: 1px solid #ffffff35;
-      border-radius: 6px;
-      padding: 8px 12px;
-      font-size: 10px;
-      font-weight: 900;
-      color: #ffffff;
-    }
-
-    /* =========================
-       ANUNCIOS
-    ========================= */
-
-    .anuncio {
-      background: #101010;
-      border: 1px dashed #363636;
-      border-radius: 12px;
-      min-height: 90px;
-      margin: 25px 0;
-      padding: 10px;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    /* =========================
-       TÍTULOS
-    ========================= */
-
-    .titulo-seccion {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 15px;
-      margin: 35px 0 20px;
-      padding-left: 15px;
-      border-left: 6px solid var(--rojo);
-    }
-
-    .titulo-seccion h2 {
-      font-family: "Anton", sans-serif;
-      font-size: 34px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .titulo-seccion span {
-      color: var(--amarillo);
-      font-size: 11px;
-      font-weight: 900;
-    }
-
-    /* =========================
-       NOTICIAS
-    ========================= */
-
-    .noticias {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .tarjeta {
-      background: linear-gradient(145deg, #1c1c1c, #0b0b0b);
-      border: 1px solid #343434;
-      border-radius: 15px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      min-width: 0;
-      transition: 0.3s;
-    }
-
-    .tarjeta:hover {
-      transform: translateY(-5px);
-      border-color: var(--rojo);
-      box-shadow: 0 12px 28px #ed101b20;
-    }
-
-    .imagen-noticia {
-      width: 100%;
-      height: 210px;
-      object-fit: cover;
-      background: #222222;
-      display: block;
-    }
-
-    .tarjeta-contenido {
-      padding: 19px;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .categoria {
-      color: var(--amarillo);
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
-    .tarjeta h3 {
-      font-size: 18px;
-      line-height: 1.4;
-      margin-bottom: 12px;
-    }
-
-    .descripcion {
-      color: #c3c3c3;
-      font-size: 13px;
-      line-height: 1.7;
-      margin-bottom: 15px;
-    }
-
-    .datos {
-      color: #999999;
-      font-size: 11px;
-      line-height: 1.8;
-      margin-top: auto;
-      padding-top: 13px;
-      border-top: 1px solid #303030;
-    }
-
-    .acciones {
-      display: flex;
-      gap: 8px;
-      margin-top: 16px;
-    }
-
-    .leer,
-    .compartir {
-      flex: 1;
-      border-radius: 7px;
-      padding: 12px 7px;
-      font-size: 11px;
-      font-weight: 900;
-      text-align: center;
-      transition: 0.2s;
-    }
-
-    .leer {
-      background: var(--rojo);
-      color: white;
-    }
-
-    .leer:hover {
-      background: var(--rojo-oscuro);
-    }
-
-    .compartir {
-      background: var(--azul);
-      color: white;
-    }
-
-    .compartir:hover {
-      background: #075dcc;
-    }
-
-    .estado {
-      text-align: center;
-      color: #cfcfcf;
-      padding: 35px 10px;
-      font-size: 14px;
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      margin-top: 60px;
-      background: #050505;
-      border-top: 4px solid var(--rojo);
-      padding: 38px 0;
-      text-align: center;
-    }
-
-    footer h2 {
-      font-family: "Anton", sans-serif;
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-
-    footer h2 span {
-      color: var(--rojo);
-    }
-
-    footer p {
-      color: #999999;
-      font-size: 12px;
-      line-height: 1.9;
-    }
-
-    .volver-arriba {
-      display: inline-block;
-      margin-top: 20px;
-      color: var(--amarillo);
-      font-size: 12px;
-      font-weight: 900;
-    }
-
-    /* =========================
-       RESPONSIVE
-    ========================= */
-
-    @media (max-width: 900px) {
-      .noticias {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .hero {
-        min-height: 370px;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      .barra-superior {
-        align-items: center;
-        gap: 10px;
-      }
-
-      .logo {
-        gap: 9px;
-      }
-
-      .logo-icono {
-        width: 43px;
-        height: 43px;
-        font-size: 23px;
-        border-radius: 11px;
-      }
-
-      .logo h1 {
-        font-size: 25px;
-      }
-
-      .logo small {
-        font-size: 8px;
-        letter-spacing: 1px;
-      }
-
-      .boton-facebook {
-        padding: 10px 11px;
-        font-size: 10px;
-      }
-
-      .menu {
-        gap: 6px;
-      }
-
-      .menu button {
-        padding: 9px 11px;
-        font-size: 10px;
-      }
-
-      .hero {
-        min-height: 390px;
-        border-radius: 15px;
-        margin-top: 22px;
-      }
-
-      .hero-contenido {
-        padding: 24px;
-      }
-
-      .hero h2 {
-        font-size: 40px;
-      }
-
-      .hero p {
-        font-size: 13px;
-      }
-
-      .hero-badges span {
-        font-size: 9px;
-        padding: 7px 9px;
-      }
-
-      .noticias {
-        grid-template-columns: 1fr;
-      }
-
-      .titulo-seccion h2 {
-        font-size: 28px;
-      }
-
-      .titulo-seccion span {
-        font-size: 9px;
-      }
-
-      .imagen-noticia {
-        height: 220px;
-      }
-
-    }
-
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zona Deportiva RD | Noticias Deportivas</title>
+
+<meta name="description" content="Zona Deportiva RD: noticias de MLB, LIDOM, béisbol, baloncesto y fútbol de República Dominicana y el mundo.">
+<meta name="keywords" content="Zona Deportiva RD, MLB, LIDOM, béisbol, baloncesto, fútbol">
+<meta name="author" content="Zona Deportiva RD">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://zonadeportivard.github.io/">
+
+<!-- GOOGLE ADSENSE -->
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6764195930165637"
+crossorigin="anonymous"></script>
+
+<meta name="google-adsense-account"
+content="ca-pub-6764195930165637">
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zona Deportiva RD | Noticias Deportivas">
+<meta property="og:description" content="Noticias deportivas de República Dominicana y el mundo.">
+<meta property="og:url" content="https://zonadeportivard.github.io/">
+<meta property="og:site_name" content="Zona Deportiva RD">
+
+<!-- FUENTES -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --rojo:#ed101b;
+  --rojo-oscuro:#b5000b;
+  --negro:#050505;
+  --negro2:#101010;
+  --gris:#1b1b1b;
+  --blanco:#ffffff;
+  --amarillo:#ffd000;
+  --azul:#1877f2;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:"Montserrat",sans-serif;
+  background:
+    radial-gradient(
+      ellipse at top,
+      #252525 0%,
+      #090909 55%,
+      #000000 100%
+    );
+  color:#fff;
+  min-height:100vh;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.contenedor{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  background:rgba(5,5,5,.98);
+  border-bottom:3px solid var(--rojo);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 4px 25px #00000070;
+}
+
+.barra-superior{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:17px 0;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+}
+
+.logo-icono{
+  width:55px;
+  height:55px;
+  background:linear-gradient(135deg,#ff202b,#b80009);
+  border-radius:15px;
+  display:grid;
+  place-items:center;
+  font-size:30px;
+  box-shadow:0 0 22px #ed101b45;
+  flex-shrink:0;
+}
+
+.logo h1{
+  font-family:"Anton",sans-serif;
+  font-size:clamp(25px,4vw,40px);
+  letter-spacing:1px;
+  line-height:1;
+}
+
+.logo h1 span{
+  color:var(--rojo);
+}
+
+.logo small{
+  display:block;
+  color:#bdbdbd;
+  font-size:10px;
+  letter-spacing:2px;
+  font-weight:800;
+  margin-top:7px;
+}
+
+.boton-facebook{
+  background:linear-gradient(135deg,#1877f2,#075dcc);
+  padding:13px 18px;
+  border-radius:9px;
+  font-size:12px;
+  font-weight:900;
+  white-space:nowrap;
+  transition:.3s;
+  text-align:center;
+}
+
+.boton-facebook:hover{
+  transform:translateY(-2px);
+}
+
+/* =========================
+   MENU
+========================= */
+
+nav{
+  background:#000;
+  border-top:1px solid #292929;
+}
+
+.menu{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:9px;
+  padding:11px 0;
+}
+
+.menu button{
+  border:1px solid #353535;
+  background:#171717;
+  color:#fff;
+  padding:11px 18px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:12px;
+  font-weight:900;
+  transition:.25s;
+}
+
+.menu button:hover,
+.menu button.activo{
+  background:var(--rojo);
+  border-color:var(--rojo);
+  box-shadow:0 0 14px #ed101b35;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  margin:30px 0 25px;
+  min-height:410px;
+  border-radius:20px;
+  overflow:hidden;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+
+  background:
+    linear-gradient(
+      0deg,
+      #000 0%,
+      #000000d9 25%,
+      #00000035 70%,
+      #00000020 100%
+    ),
+    url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+
+  border:1px solid #393939;
+  box-shadow:0 15px 45px #00000055;
+}
+
+.hero-contenido{
+  position:relative;
+  z-index:1;
+  padding:38px;
+  max-width:760px;
+}
+
+.etiqueta{
+  display:inline-block;
+  background:var(--rojo);
+  color:#fff;
+  padding:8px 14px;
+  border-radius:6px;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.5px;
+  margin-bottom:15px;
+  text-transform:uppercase;
+}
+
+.hero h2{
+  font-family:"Anton",sans-serif;
+  font-size:clamp(38px,6vw,70px);
+  line-height:1.02;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  text-shadow:3px 4px 0 #00000050;
+}
+
+.hero h2 span{
+  color:var(--rojo);
+}
+
+.hero p{
+  color:#e2e2e2;
+  font-size:15px;
+  line-height:1.7;
+  margin-top:18px;
+  max-width:600px;
+}
+
+.hero-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:23px;
+}
+
+.hero-badges span{
+  background:#ffffff12;
+  border:1px solid #ffffff35;
+  border-radius:6px;
+  padding:8px 12px;
+  font-size:10px;
+  font-weight:900;
+}
+
+/* =========================
+   ADS
+========================= */
+
+.anuncio{
+  background:#101010;
+  border:1px dashed #363636;
+  border-radius:12px;
+  min-height:90px;
+  margin:25px 0;
+  padding:10px;
+  text-align:center;
+  overflow:hidden;
+}
+
+/* =========================
+   TITULOS
+========================= */
+
+.titulo-seccion{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  margin:35px 0 20px;
+  padding-left:15px;
+  border-left:6px solid var(--rojo);
+}
+
+.titulo-seccion h2{
+  font-family:"Anton",sans-serif;
+  font-size:34px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.titulo-seccion span{
+  color:var(--amarillo);
+  font-size:11px;
+  font-weight:900;
+}
+
+/* =========================
+   NOTICIAS
+========================= */
+
+.noticias{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.tarjeta{
+  background:linear-gradient(145deg,#1c1c1c,#0b0b0b);
+  border:1px solid #343434;
+  border-radius:15px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  transition:.3s;
+}
+
+.tarjeta:hover{
+  transform:translateY(-5px);
+  border-color:var(--rojo);
+  box-shadow:0 12px 28px #ed101b20;
+}
+
+.imagen-noticia{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+  background:#222;
+  display:block;
+}
+
+.tarjeta-contenido{
+  padding:19px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+.categoria{
+  color:var(--amarillo);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+.tarjeta h3{
+  font-size:18px;
+  line-height:1.4;
+  margin-bottom:12px;
+}
+
+.descripcion{
+  color:#c3c3c3;
+  font-size:13px;
+  line-height:1.7;
+  margin-bottom:15px;
+}
+
+.datos{
+  color:#999;
+  font-size:11px;
+  line-height:1.8;
+  margin-top:auto;
+  padding-top:13px;
+  border-top:1px solid #303030;
+}
+
+.acciones{
+  display:flex;
+  gap:8px;
+  margin-top:16px;
+}
+
+.leer,
+.compartir{
+  flex:1;
+  border-radius:7px;
+  padding:12px 7px;
+  font-size:11px;
+  font-weight:900;
+  text-align:center;
+  transition:.2s;
+}
+
+.leer{
+  background:var(--rojo);
+}
+
+.leer:hover{
+  background:var(--rojo-oscuro);
+}
+
+.compartir{
+  background:var(--azul);
+}
+
+.compartir:hover{
+  background:#075dcc;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  margin-top:60px;
+  background:#050505;
+  border-top:4px solid var(--rojo);
+  padding:38px 0;
+  text-align:center;
+}
+
+footer h2{
+  font-family:"Anton",sans-serif;
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+footer h2 span{
+  color:var(--rojo);
+}
+
+footer p{
+  color:#999;
+  font-size:12px;
+  line-height:1.9;
+}
+
+.volver-arriba{
+  display:inline-block;
+  margin-top:20px;
+  color:var(--amarillo);
+  font-size:12px;
+  font-weight:900;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .noticias{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:600px){
+
+  .barra-superior{
+    align-items:center;
+    gap:10px;
+  }
+
+  .logo{
+    gap:9px;
+  }
+
+  .logo-icono{
+    width:43px;
+    height:43px;
+    font-size:23px;
+    border-radius:11px;
+  }
+
+  .logo h1{
+    font-size:25px;
+  }
+
+  .logo small{
+    font-size:8px;
+    letter-spacing:1px;
+  }
+
+  .boton-facebook{
+    padding:10px 11px;
+    font-size:10px;
+  }
+
+  .menu{
+    gap:6px;
+  }
+
+  .menu button{
+    padding:9px 11px;
+    font-size:10px;
+  }
+
+  .hero{
+    min-height:390px;
+    border-radius:15px;
+    margin-top:22px;
+  }
+
+  .hero-contenido{
+    padding:24px;
+  }
+
+  .hero h2{
+    font-size:40px;
+  }
+
+  .hero p{
+    font-size:13px;
+  }
+
+  .hero-badges span{
+    font-size:9px;
+    padding:7px 9px;
+  }
+
+  .noticias{
+    grid-template-columns:1fr;
+  }
+
+  .titulo-seccion h2{
+    font-size:28px;
+  }
+
+  .titulo-seccion span{
+    font-size:9px;
+  }
+
+  .imagen-noticia{
+    height:220px;
+  }
+
+}
+
+</style>
 </head>
 
 <body id="inicio">
 
-  <!-- ENCABEZADO -->
+<header>
 
-  <header>
+  <div class="contenedor barra-superior">
 
-    <div class="contenedor barra-superior">
+    <a href="#inicio" class="logo">
 
-      <a href="#inicio" class="logo">
+      <div class="logo-icono">⚾</div>
 
-        <div class="logo-icono">⚾</div>
+      <div>
+        <h1>ZONA <span>DEPORTIVA</span></h1>
+        <small>RD · PASIÓN POR EL DEPORTE</small>
+      </div>
 
-        <div>
-          <h1>ZONA <span>DEPORTIVA</span></h1>
-          <small>RD · PASIÓN POR EL DEPORTE</small>
-        </div>
+    </a>
 
-      </a>
+    <a
+      class="boton-facebook"
+      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fzonadeportivard.github.io%2F"
+      target="_blank"
+      rel="noopener noreferrer">
 
-      <a
-        class="boton-facebook"
-        href="https://www.facebook.com/sharer/sharer.php?u=https://zonadeportivard.github.io/-zona-deportiva-rd/"
-        target="_blank"
-        rel="noopener noreferrer">
+      Compartir página
 
-        Compartir página
+    </a>
 
-      </a>
+  </div>
+
+  <nav>
+
+    <div class="contenedor menu">
+
+      <button class="activo" onclick="filtrarNoticias('TODAS',this)">
+        Todas
+      </button>
+
+      <button onclick="filtrarNoticias('MLB',this)">
+        MLB
+      </button>
+
+      <button onclick="filtrarNoticias('LIDOM',this)">
+        LIDOM
+      </button>
+
+      <button onclick="filtrarNoticias('BALONCESTO',this)">
+        Baloncesto
+      </button>
+
+      <button onclick="filtrarNoticias('FÚTBOL',this)">
+        Fútbol
+      </button>
+
+      <button onclick="filtrarNoticias('BÉISBOL',this)">
+        Béisbol
+      </button>
 
     </div>
 
-    <!-- MENÚ -->
+  </nav>
 
-    <nav>
+</header>
 
-      <div class="contenedor menu">
+<main class="contenedor">
 
-        <button class="activo" data-categoria="TODAS">
-          Todas
-        </button>
+  <section class="hero">
 
-        <button data-categoria="MLB">
-          MLB
-        </button>
+    <div class="hero-contenido">
 
-        <button data-categoria="LIDOM">
-          LIDOM
-        </button>
-
-        <button data-categoria="BALONCESTO">
-          Baloncesto
-        </button>
-
-        <button data-categoria="FÚTBOL">
-          Fútbol
-        </button>
-
-        <button data-categoria="BÉISBOL">
-          Béisbol
-        </button>
-
-      </div>
-
-    </nav>
-
-  </header>
-
-  <!-- CONTENIDO -->
-
-  <main class="contenedor">
-
-    <!-- PORTADA -->
-
-    <section class="hero">
-
-      <div class="hero-contenido">
-
-        <span class="etiqueta">
-          🔥 NOTICIAS DEPORTIVAS
-        </span>
-
-        <h2>
-          LA PASIÓN<br>
-          <span>DEPORTIVA</span><br>
-          DOMINICANA
-        </h2>
-
-        <p>
-          Toda la actualidad del béisbol, MLB, LIDOM,
-          baloncesto, fútbol y mucho más en un solo lugar.
-        </p>
-
-        <div class="hero-badges">
-          <span>⚾ BÉISBOL</span>
-          <span>🏀 BALONCESTO</span>
-          <span>⚽ FÚTBOL</span>
-          <span>🇩🇴 RD</span>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- ANUNCIO ADSENSE -->
-
-    <div class="anuncio">
-
-      <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-6764195930165637"
-        data-ad-slot="1227465453"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-
-    </div>
-
-    <!-- NOTICIAS -->
-
-    <section>
-
-      <div class="titulo-seccion">
-
-        <h2>Últimas noticias</h2>
-
-        <span>● ACTUALIZADO</span>
-
-      </div>
-
-      <div id="estado" class="estado">
-        Cargando noticias...
-      </div>
-
-      <div id="noticias" class="noticias"></div>
-
-    </section>
-
-    <!-- SEGUNDO ANUNCIO -->
-
-    <div class="anuncio">
-
-      <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-6764195930165637"
-        data-ad-slot="1227465453"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-
-    </div>
-
-  </main>
-
-  <!-- PIE DE PÁGINA -->
-
-  <footer>
-
-    <div class="contenedor">
+      <span class="etiqueta">
+        🔥 NOTICIAS DEPORTIVAS
+      </span>
 
       <h2>
-        ZONA <span>DEPORTIVA RD</span>
+        LA PASIÓN<br>
+        <span>DEPORTIVA</span><br>
+        DOMINICANA
       </h2>
 
       <p>
-        Noticias deportivas de República Dominicana y el mundo.
+        Toda la actualidad del béisbol, MLB, LIDOM,
+        baloncesto, fútbol y mucho más en un solo lugar.
       </p>
 
-      <p>
-        © 2026 Zona Deportiva RD. Todos los derechos reservados.
-      </p>
-
-      <a href="#inicio" class="volver-arriba">
-        Volver arriba ↑
-      </a>
+      <div class="hero-badges">
+        <span>⚾ BÉISBOL</span>
+        <span>🏀 BALONCESTO</span>
+        <span>⚽ FÚTBOL</span>
+        <span>🇩🇴 RD</span>
+      </div>
 
     </div>
 
-  </footer>
+  </section>
 
-  <!-- CARGAR NOTICIAS -->
+  <div class="anuncio">
 
-  <script>
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-6764195930165637"
+      data-ad-slot="1227465453"
+      data-ad-format="auto"
+      data-full-width-responsive="true">
+    </ins>
 
-    const contenedorNoticias =
-      document.getElementById("noticias");
+  </div>
 
-    const estado =
-      document.getElementById("estado");
+  <section>
 
-    const botones =
-      document.querySelectorAll("[data-categoria]");
+    <div class="titulo-seccion">
+
+      <h2>Últimas noticias</h2>
+
+      <span>● ACTUALIZADO</span>
+
+    </div>
+
+    <div id="noticias" class="noticias"></div>
+
+  </section>
+
+  <div class="anuncio">
+
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-6764195930165637"
+      data-ad-slot="1227465453"
+      data-ad-format="auto"
+      data-full-width-responsive="true">
+    </ins>
+
+  </div>
+
+</main>
+
+<footer>
+
+  <div class="contenedor">
+
+    <h2>
+      ZONA <span>DEPORTIVA RD</span>
+    </h2>
+
+    <p>
+      Noticias deportivas de República Dominicana y el mundo.
+    </p>
+
+    <p>
+      © 2026 Zona Deportiva RD. Todos los derechos reservados.
+    </p>
+
+    <a href="#inicio" class="volver-arriba">
+      Volver arriba ↑
+    </a>
+
+  </div>
+
+</footer>
+
+<script>
+
+const noticias = [
+
+  {
+    categoria:"MLB",
+    titulo:"La temporada de MLB entra en una etapa decisiva",
+    descripcion:"Los equipos de las Grandes Ligas continúan luchando por posiciones importantes en la recta final de la temporada.",
+    fecha:"18 de septiembre de 2026",
+    fuente:"MLB",
+    imagen:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=85",
+    url:"https://www.mlb.com/"
+  },
+
+  {
+    categoria:"BÉISBOL",
+    titulo:"El béisbol continúa siendo protagonista entre los fanáticos dominicanos",
+    descripcion:"La pasión por el béisbol sigue creciendo entre los seguidores dominicanos dentro y fuera del país.",
+    fecha:"18 de septiembre de 2026",
+    fuente:"Zona Deportiva RD",
+    imagen:"https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=85",
+    url:"https://www.mlb.com/"
+  },
+
+  {
+    categoria:"BALONCESTO",
+    titulo:"El baloncesto mantiene la atención de los fanáticos deportivos",
+    descripcion:"La actualidad del baloncesto continúa generando interés entre los seguidores del deporte.",
+    fecha:"18 de septiembre de 2026",
+    fuente:"FIBA",
+    imagen:"https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=85",
+    url:"https://www.fiba.basketball/"
+  },
+
+  {
+    categoria:"FÚTBOL",
+    titulo:"El fútbol internacional continúa con grandes jornadas",
+    descripcion:"Los principales torneos y clubes del fútbol internacional mantienen una intensa actividad deportiva.",
+    fecha:"18 de septiembre de 2026",
+    fuente:"FIFA",
+    imagen:"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=85",
+    url:"https://www.fifa.com/"
+  },
+
+  {
+    categoria:"LIDOM",
+    titulo:"La pelota dominicana comienza a calentar motores",
+    descripcion:"Los seguidores dominicanos esperan con entusiasmo las novedades relacionadas con el béisbol local.",
+    fecha:"18 de septiembre de 2026",
+    fuente:"LIDOM",
+    imagen:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=85",
+    url:"https://lidom.com/"
+  },
+
+  {
+    categoria:"MLB",
+    titulo:"Los jugadores dominicanos siguen siendo protagonistas en MLB",
+    descripcion:"El talento dominicano continúa teniendo presencia destacada en las Grandes Ligas.",
+    fecha:"18 de septiembre de 2026",
+    fuente:"MLB",
+    imagen:"https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85",
+    url:"https://www.mlb.com/"
+  },
+
+  {
+    categoria:"BÉISBOL",
+    titulo:"La pasión por el béisbol se mantiene fuerte en República Dominicana",
+    descripcion:"Los fanáticos dominicanos continúan siguiendo cada movimiento de sus jugadores y equipos favoritos.",
+    fecha:"18 de septiembre de 2026",
+    fuente:"Zona Deportiva RD",
+    imagen:"https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1200&q=85",
+    url:"https://www.mlb.com/"
+  },
+
+  {
+    categoria:"BALONCESTO",
+    titulo:"La actualidad del baloncesto internacional sigue avanzando",
+    descripcion:"Las principales competencias continúan ofreciendo jornadas de gran interés para los aficionados.",
+    fecha:"18 de septiembre de 2026",
+    fuente:"FIBA",
+    imagen:"https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=1200&q=85",
+    url:"https://www.fiba.basketball/"
+  },
+
+  {
+    categoria:"FÚTBOL",
+    titulo:"Los fanáticos siguen atentos a la actualidad del fútbol",
+    descripcion:"El calendario internacional mantiene una intensa actividad para clubes y selecciones.",
+    fecha:"18 de septiembre de 2026",
+    fuente:"FIFA",
+    imagen:"https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=1200&q=85",
+    url:"https://www.fifa.com/"
+  }
+
+];
+
+function mostrarNoticias(lista){
 
-    let todasLasNoticias = [];
+  const contenedor=document.getElementById("noticias");
+
+  contenedor.innerHTML="";
 
-    const imagenPredeterminada =
-      "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1000&q=80";
+  lista.forEach(noticia=>{
 
-    function escaparHTML(texto) {
+    const compartir=
+      "https://www.facebook.com/sharer/sharer.php?u="+
+      encodeURIComponent(
+        "https://zonadeportivard.github.io/"
+      );
 
-      return String(texto || "")
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
+    const tarjeta=document.createElement("article");
 
-    }
+    tarjeta.className="tarjeta";
 
-    function crearTarjeta(noticia) {
+    tarjeta.innerHTML=`
 
-      const imagen =
-        noticia.imagen && noticia.imagen.trim()
-          ? noticia.imagen
-          : imagenPredeterminada;
+      <img
+        class="imagen-noticia"
+        src="${noticia.imagen}"
+        alt="${noticia.titulo}"
+        loading="lazy"
+        onerror="this.style.display='none'"
+      >
 
-      const titulo =
-        escaparHTML(noticia.titulo);
+      <div class="tarjeta-contenido">
 
-      const categoria =
-        escaparHTML(noticia.categoria);
+        <div class="categoria">
+          ${noticia.categoria}
+        </div>
 
-      const descripcion =
-        escaparHTML(noticia.descripcion);
+        <h3>
+          ${noticia.titulo}
+        </h3>
 
-      const fecha =
-        escaparHTML(noticia.fecha);
+        <p class="descripcion">
+          ${noticia.descripcion}
+        </p>
 
-      const fuente =
-        escaparHTML(noticia.fuente);
+        <div class="datos">
 
-      const url =
-        escaparHTML(noticia.url);
+          <strong>Fecha:</strong>
+          ${noticia.fecha}
 
-      const urlCompartir =
-        encodeURIComponent(
-          noticia.url ||
-          "https://zonadeportivard.github.io/-zona-deportiva-rd/"
-        );
+          <br>
 
-      return `
+          <strong>Fuente:</strong>
+          ${noticia.fuente}
 
-        <article class="tarjeta">
+        </div>
 
-          <img
-            class="imagen-noticia"
-            src="${imagen}"
-            alt="${titulo}"
-            loading="lazy"
-            onerror="this.src='${imagenPredeterminada}'">
+        <div class="acciones">
 
-          <div class="tarjeta-contenido">
+          <a
+            class="leer"
+            href="${noticia.url}"
+            target="_blank"
+            rel="noopener noreferrer">
+            Leer fuente
+          </a>
 
-            <div class="categoria">
-              ${categoria}
-            </div>
+          <a
+            class="compartir"
+            href="${compartir}"
+            target="_blank"
+            rel="noopener noreferrer">
+            Facebook
+          </a>
 
-            <h3>
-              ${titulo}
-            </h3>
+        </div>
 
-            <p class="descripcion">
-              ${descripcion}
-            </p>
+      </div>
 
-            <div class="datos">
-              <strong>Fecha:</strong> ${fecha}<br>
-              <strong>Fuente:</strong> ${fuente}
-            </div>
+    `;
 
-            <div class="acciones">
+    contenedor.appendChild(tarjeta);
 
-              <a
-                class="leer"
-                href="${url}"
-                target="_blank"
-                rel="noopener noreferrer">
+  });
 
-                Leer fuente
+}
 
-              </a>
+function filtrarNoticias(categoria,boton){
 
-              <a
-                class="compartir"
-                href="https://www.facebook.com/sharer/sharer.php?u=${urlCompartir}"
-                target="_blank"
-                rel="noopener noreferrer">
+  document
+    .querySelectorAll(".menu button")
+    .forEach(b=>b.classList.remove("activo"));
 
-                Facebook
+  boton.classList.add("activo");
 
-              </a>
+  if(categoria==="TODAS"){
 
-            </div>
+    mostrarNoticias(noticias);
 
-          </div>
+    return;
 
-        </article>
+  }
 
-      `;
+  const filtradas=noticias.filter(
+    noticia=>
+      noticia.categoria.toUpperCase()===categoria
+  );
 
-    }
+  mostrarNoticias(filtradas);
 
-    function mostrarNoticias(categoria = "TODAS") {
+}
 
-      const noticiasFiltradas =
-        categoria === "TODAS"
-          ? todasLasNoticias
-          : todasLasNoticias.filter(noticia =>
-              String(noticia.categoria || "")
-                .toUpperCase() === categoria
-            );
+mostrarNoticias(noticias);
 
-      if (!noticiasFiltradas.length) {
+try{
 
-        contenedorNoticias.innerHTML = "";
+  (adsbygoogle=window.adsbygoogle||[]).push({});
+  (adsbygoogle=window.adsbygoogle||[]).push({});
 
-        estado.style.display = "block";
+}catch(error){
 
-        estado.textContent =
-          "No hay noticias en esta categoría.";
+  console.log("AdSense pendiente de carga.");
 
-        return;
+}
 
-      }
-
-      estado.style.display = "none";
-
-      contenedorNoticias.innerHTML =
-        noticiasFiltradas
-          .map(crearTarjeta)
-          .join("");
-
-    }
-
-    botones.forEach(boton => {
-
-      boton.addEventListener("click", () => {
-
-        botones.forEach(item =>
-          item.classList.remove("activo")
-        );
-
-        boton.classList.add("activo");
-
-        mostrarNoticias(
-          boton.dataset.categoria
-        );
-
-      });
-
-    });
-
-    fetch("noticias.json")
-
-      .then(respuesta => {
-
-        if (!respuesta.ok) {
-
-          throw new Error(
-            "No se pudo cargar noticias.json"
-          );
-
-        }
-
-        return respuesta.json();
-
-      })
-
-      .then(noticias => {
-
-        if (!Array.isArray(noticias)) {
-
-          throw new Error(
-            "El archivo noticias.json no tiene un formato válido"
-          );
-
-        }
-
-        todasLasNoticias = noticias;
-
-        mostrarNoticias();
-
-      })
-
-      .catch(error => {
-
-        console.error(error);
-
-        estado.style.display = "block";
-
-        estado.textContent =
-          "No se pudieron cargar las noticias. " +
-          "Revisa que noticias.json esté en el mismo lugar que index.html.";
-
-      });
-
-  </script>
+</script>
 
 </body>
 </html>
