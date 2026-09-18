@@ -1,92 +1,38 @@
 [
-{
-“categoria”: “MLB”,
-“titulo”: “Las Grandes Ligas continúan con una intensa temporada”,
-“descripcion”: “Los equipos de MLB siguen compitiendo por posiciones importantes durante la temporada.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “MLB”,
-“imagen”: “https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80”,
-“url”: “https://www.mlb.com/”
-},
-{
-“categoria”: “MLB”,
-“titulo”: “Los jugadores dominicanos siguen destacándose en MLB”,
-“descripcion”: “El talento dominicano continúa teniendo una presencia importante en las Grandes Ligas.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “MLB”,
-“imagen”: “https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1200&q=80”,
-“url”: “https://www.mlb.com/”
-},
-{
-“categoria”: “LIDOM”,
-“titulo”: “LIDOM se prepara para una nueva temporada”,
-“descripcion”: “La pelota dominicana comienza a prepararse para una nueva temporada de béisbol invernal.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “LIDOM”,
-“imagen”: “https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=80”,
-“url”: “https://lidom.com/”
-},
-{
-“categoria”: “BÉISBOL”,
-“titulo”: “La pasión por el béisbol sigue creciendo en República Dominicana”,
-“descripcion”: “Los fanáticos dominicanos continúan atentos a las principales noticias de la pelota.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “Zona Deportiva RD”,
-“imagen”: “https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1200&q=80”,
-“url”: “https://www.mlb.com/”
-},
-{
-“categoria”: “BALONCESTO”,
-“titulo”: “El baloncesto continúa captando la atención de los fanáticos”,
-“descripcion”: “Las principales competencias de baloncesto mantienen una intensa actividad deportiva.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “FIBA”,
-“imagen”: “https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80”,
-“url”: “https://www.fiba.basketball/”
-},
-{
-“categoria”: “FÚTBOL”,
-“titulo”: “El fútbol internacional continúa con grandes jornadas”,
-“descripcion”: “Los clubes y selecciones mantienen una intensa actividad en el fútbol internacional.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “FIFA”,
-“imagen”: “https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80”,
-“url”: “https://www.fifa.com/”
-},
-{
-“categoria”: “LIDOM”,
-“titulo”: “Los equipos dominicanos preparan sus planteles”,
-“descripcion”: “Los equipos de la pelota dominicana continúan trabajando en sus preparativos para la próxima temporada.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “LIDOM”,
-“imagen”: “https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80”,
-“url”: “https://lidom.com/”
-},
-{
-“categoria”: “BÉISBOL”,
-“titulo”: “República Dominicana mantiene su tradición beisbolera”,
-“descripcion”: “El béisbol continúa siendo uno de los deportes favoritos de los dominicanos.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “Zona Deportiva RD”,
-“imagen”: “https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80”,
-“url”: “https://www.mlb.com/”
-},
-{
-“categoria”: “BALONCESTO”,
-“titulo”: “La actualidad del baloncesto sigue avanzando”,
-“descripcion”: “Los aficionados continúan pendientes de las principales noticias y competencias de baloncesto.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “FIBA”,
-“imagen”: “https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=1200&q=80”,
-“url”: “https://www.fiba.basketball/”
-},
-{
-“categoria”: “FÚTBOL”,
-“titulo”: “Los fanáticos siguen atentos a la actualidad del fútbol”,
-“descripcion”: “La actividad internacional mantiene a los seguidores pendientes de sus equipos favoritos.”,
-“fecha”: “18 de septiembre de 2026”,
-“fuente”: “FIFA”,
-“imagen”: “https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=1200&q=80”,
-“url”: “https://www.fifa.com/”
-}
+  {
+    "categoria": "MLB",
+    "titulo": "Las Grandes Ligas continúan con una intensa temporada",
+    "descripcion": "Los equipos de MLB siguen compitiendo durante la temporada.",
+    "fecha": "18 de septiembre de 2026",
+    "fuente": "MLB",
+    "imagen": "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://www.mlb.com/"
+  },
+  {
+    "categoria": "LIDOM",
+    "titulo": "LIDOM se prepara para una nueva temporada",
+    "descripcion": "La pelota dominicana comienza a prepararse para una nueva temporada.",
+    "fecha": "18 de septiembre de 2026",
+    "fuente": "LIDOM",
+    "imagen": "https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://lidom.com/"
+  },
+  {
+    "categoria": "BALONCESTO",
+    "titulo": "El baloncesto continúa captando la atención",
+    "descripcion": "Las principales competencias mantienen una intensa actividad deportiva.",
+    "fecha": "18 de septiembre de 2026",
+    "fuente": "FIBA",
+    "imagen": "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://www.fiba.basketball/"
+  },
+  {
+    "categoria": "FÚTBOL",
+    "titulo": "El fútbol internacional continúa con grandes jornadas",
+    "descripcion": "Los clubes mantienen una intensa actividad internacional.",
+    "fecha": "18 de septiembre de 2026",
+    "fuente": "FIFA",
+    "imagen": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://www.fifa.com/"
+  }
 ]
