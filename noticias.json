@@ -1,38 +1,74 @@
 [
   {
     "categoria": "MLB",
-    "titulo": "Las Grandes Ligas continúan con una intensa temporada",
-    "descripcion": "Los equipos de MLB siguen compitiendo durante la temporada.",
+    "titulo": "Los Dodgers conquistan su quinto título divisional consecutivo",
+    "descripcion": "Los Angeles aseguró nuevamente el dominio de la División Oeste de la Liga Nacional y avanza hacia la recta final de la temporada.",
+    "fecha": "18 de septiembre de 2026",
+    "fuente": "Diario Libre",
+    "imagen": "https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://www.diariolibre.com/deportes/beisbol"
+  },
+  {
+    "categoria": "MLB",
+    "titulo": "Christian Yelich impulsa a los Brewers en su victoria 95 de la temporada",
+    "descripcion": "Milwaukee derrotó a Pittsburgh 5-4 y consiguió su victoria número 95, manteniéndose entre los mejores equipos de las Grandes Ligas.",
     "fecha": "18 de septiembre de 2026",
     "fuente": "MLB",
     "imagen": "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://www.mlb.com/"
+    "url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win"
+  },
+  {
+    "categoria": "BÉISBOL",
+    "titulo": "La selección dominicana U15 participará en la Copa Mundial de México",
+    "descripcion": "El béisbol dominicano tendrá representación en la Copa Mundial U15 que se celebrará en México.",
+    "fecha": "17 de septiembre de 2026",
+    "fuente": "Diario Libre",
+    "imagen": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://www.diariolibre.com/deportes/beisbol"
   },
   {
     "categoria": "LIDOM",
-    "titulo": "LIDOM se prepara para una nueva temporada",
-    "descripcion": "La pelota dominicana comienza a prepararse para una nueva temporada.",
-    "fecha": "18 de septiembre de 2026",
-    "fuente": "LIDOM",
+    "titulo": "Los seis gerentes de LIDOM se preparan para el torneo invernal",
+    "descripcion": "Los principales equipos de la pelota dominicana avanzan en sus preparativos para la próxima temporada de LIDOM.",
+    "fecha": "17 de septiembre de 2026",
+    "fuente": "Diario Libre",
     "imagen": "https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://lidom.com/"
+    "url": "https://www.diariolibre.com/deportes/beisbol"
   },
   {
     "categoria": "BALONCESTO",
-    "titulo": "El baloncesto continúa captando la atención",
-    "descripcion": "Las principales competencias mantienen una intensa actividad deportiva.",
-    "fecha": "18 de septiembre de 2026",
-    "fuente": "FIBA",
+    "titulo": "Los Knicks suspenden la venta de boletos tras un error en los precios",
+    "descripcion": "Nueva York pausó la venta de entradas después de que algunos boletos aparecieran publicados con precios superiores a los previstos.",
+    "fecha": "17 de septiembre de 2026",
+    "fuente": "Diario Libre",
     "imagen": "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://www.fiba.basketball/"
+    "url": "https://www.diariolibre.com/deportes/baloncesto"
   },
   {
     "categoria": "FÚTBOL",
-    "titulo": "El fútbol internacional continúa con grandes jornadas",
-    "descripcion": "Los clubes mantienen una intensa actividad internacional.",
+    "titulo": "Rafa Márquez presenta su primera convocatoria con México",
+    "descripcion": "El entrenador anunció una lista de 30 jugadores para los próximos compromisos internacionales de la selección mexicana.",
     "fecha": "18 de septiembre de 2026",
-    "fuente": "FIFA",
+    "fuente": "Sports Illustrated",
     "imagen": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://www.fifa.com/"
+    "url": "https://www.si.com/es-us/futbol/la-primera-convocatoria-de-rafa-marquez-como-entrenador-de-la-seleccion-mexicana"
+  },
+  {
+    "categoria": "MLB",
+    "titulo": "La jornada de MLB presenta una cartelera cargada este viernes",
+    "descripcion": "La jornada del 18 de septiembre incluye enfrentamientos como Cubs contra Reds, Brewers contra Orioles y Phillies contra Mets.",
+    "fecha": "18 de septiembre de 2026",
+    "fuente": "MLB",
+    "imagen": "https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://www.mlb.com/schedule/2026-09-18"
+  },
+  {
+    "categoria": "BÉISBOL",
+    "titulo": "Oneil Cruz lidera ofensiva de los Piratas",
+    "descripcion": "El jugador dominicano encabezó un importante ataque de Pittsburgh durante la jornada de Grandes Ligas.",
+    "fecha": "17 de septiembre de 2026",
+    "fuente": "Diario Libre",
+    "imagen": "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://www.diariolibre.com/deportes/beisbol"
   }
 ]
