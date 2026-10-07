@@ -33,7 +33,9 @@ content="ca-pub-6764195930165637">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+rel="stylesheet">
 
 <style>
 
@@ -84,6 +86,7 @@ button{
   width:min(1180px,92%);
   margin:auto;
 }
+
 
 /* =========================
    HEADER
@@ -160,6 +163,7 @@ header{
   transform:translateY(-2px);
 }
 
+
 /* =========================
    MENU
 ========================= */
@@ -195,6 +199,7 @@ nav{
   border-color:var(--rojo);
   box-shadow:0 0 14px #ed101b35;
 }
+
 
 /* =========================
    HERO
@@ -281,6 +286,7 @@ nav{
   font-weight:900;
 }
 
+
 /* =========================
    ADS
 ========================= */
@@ -290,11 +296,21 @@ nav{
   border:1px dashed #363636;
   border-radius:12px;
   min-height:90px;
-  margin:25px 0;
+  margin:35px 0;
   padding:10px;
   text-align:center;
   overflow:hidden;
 }
+
+.anuncio-titulo{
+  color:#777;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:5px;
+  text-transform:uppercase;
+}
+
 
 /* =========================
    TITULOS
@@ -322,6 +338,30 @@ nav{
   font-size:11px;
   font-weight:900;
 }
+
+
+/* =========================
+   INTRODUCCIÓN EDITORIAL
+========================= */
+
+.introduccion{
+  background:linear-gradient(145deg,#171717,#0b0b0b);
+  border:1px solid #303030;
+  border-radius:12px;
+  padding:18px 20px;
+  margin-bottom:25px;
+}
+
+.introduccion p{
+  color:#c7c7c7;
+  font-size:13px;
+  line-height:1.8;
+}
+
+.introduccion strong{
+  color:#fff;
+}
+
 
 /* =========================
    NOTICIAS
@@ -429,6 +469,26 @@ nav{
   background:#075dcc;
 }
 
+
+/* =========================
+   MENSAJE DE ERROR
+========================= */
+
+.mensaje{
+  color:#aaa;
+  text-align:center;
+  padding:40px 20px;
+  grid-column:1/-1;
+  background:#101010;
+  border:1px solid #292929;
+  border-radius:12px;
+}
+
+.mensaje-error{
+  color:#ff5b63;
+}
+
+
 /* =========================
    FOOTER
 ========================= */
@@ -464,6 +524,7 @@ footer p{
   font-size:12px;
   font-weight:900;
 }
+
 
 /* =========================
    RESPONSIVE
@@ -557,27 +618,49 @@ footer p{
     height:220px;
   }
 
+  .introduccion{
+    padding:16px;
+  }
+
+}
+
+
+/* =========================
+   ACCESIBILIDAD
+========================= */
+
+button:focus,
+a:focus{
+  outline:2px solid var(--amarillo);
+  outline-offset:3px;
 }
 
 </style>
+
 </head>
 
+
 <body id="inicio">
+
 
 <header>
 
   <div class="contenedor barra-superior">
 
-    <a href="#inicio" class="logo">
+    <a href="#inicio" class="logo" aria-label="Zona Deportiva RD">
 
       <div class="logo-icono">⚾</div>
 
       <div>
+
         <h1>ZONA <span>DEPORTIVA</span></h1>
+
         <small>RD · PASIÓN POR EL DEPORTE</small>
+
       </div>
 
     </a>
+
 
     <a
       class="boton-facebook"
@@ -591,32 +674,57 @@ footer p{
 
   </div>
 
+
   <nav>
 
     <div class="contenedor menu">
 
-      <button class="activo" onclick="filtrarNoticias('TODAS',this)">
+      <button
+        class="activo"
+        onclick="filtrarNoticias('TODAS',this)">
+
         Todas
+
       </button>
 
-      <button onclick="filtrarNoticias('MLB',this)">
+
+      <button
+        onclick="filtrarNoticias('MLB',this)">
+
         MLB
+
       </button>
 
-      <button onclick="filtrarNoticias('LIDOM',this)">
+
+      <button
+        onclick="filtrarNoticias('LIDOM',this)">
+
         LIDOM
+
       </button>
 
-      <button onclick="filtrarNoticias('BALONCESTO',this)">
+
+      <button
+        onclick="filtrarNoticias('BALONCESTO',this)">
+
         Baloncesto
+
       </button>
 
-      <button onclick="filtrarNoticias('FÚTBOL',this)">
+
+      <button
+        onclick="filtrarNoticias('FÚTBOL',this)">
+
         Fútbol
+
       </button>
 
-      <button onclick="filtrarNoticias('BÉISBOL',this)">
+
+      <button
+        onclick="filtrarNoticias('BÉISBOL',this)">
+
         Béisbol
+
       </button>
 
     </div>
@@ -625,7 +733,11 @@ footer p{
 
 </header>
 
+
 <main class="contenedor">
+
+
+  <!-- HERO -->
 
   <section class="hero">
 
@@ -635,39 +747,35 @@ footer p{
         🔥 NOTICIAS DEPORTIVAS
       </span>
 
+
       <h2>
         LA PASIÓN<br>
         <span>DEPORTIVA</span><br>
         DOMINICANA
       </h2>
 
+
       <p>
         Toda la actualidad del béisbol, MLB, LIDOM,
         baloncesto, fútbol y mucho más en un solo lugar.
       </p>
 
+
       <div class="hero-badges">
+
         <span>⚾ BÉISBOL</span>
         <span>🏀 BALONCESTO</span>
         <span>⚽ FÚTBOL</span>
         <span>🇩🇴 RD</span>
+
       </div>
 
     </div>
 
   </section>
 
-  <div class="anuncio">
 
-    <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-6764195930165637"
-      data-ad-slot="1227465453"
-      data-ad-format="auto"
-      data-full-width-responsive="true">
-    </ins>
-
-  </div>
+  <!-- CONTENIDO EDITORIAL -->
 
   <section>
 
@@ -679,23 +787,73 @@ footer p{
 
     </div>
 
-    <div id="noticias" class="noticias"></div>
+
+    <div class="introduccion">
+
+      <p>
+        <strong>Zona Deportiva RD</strong> reúne información
+        y actualidad sobre MLB, LIDOM, béisbol dominicano,
+        baloncesto y fútbol. Seleccionamos las noticias
+        deportivas más relevantes para mantener informada
+        a nuestra audiencia.
+      </p>
+
+    </div>
+
+
+    <!-- LAS NOTICIAS SE CARGAN AQUÍ -->
+
+    <div id="noticias" class="noticias">
+
+      <div class="mensaje">
+        Cargando las últimas noticias deportivas...
+      </div>
+
+    </div>
 
   </section>
 
-  <div class="anuncio">
 
-    <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-6764195930165637"
-      data-ad-slot="1227465453"
-      data-ad-format="auto"
-      data-full-width-responsive="true">
-    </ins>
+  <!--
+    LOS ANUNCIOS SE INSERTAN DESPUÉS
+    DE QUE LAS NOTICIAS HAYAN CARGADO.
+  -->
 
-  </div>
+  <div id="espacio-anuncio-1"></div>
+
+
+  <!-- SEGUNDO BLOQUE DE CONTENIDO -->
+
+  <section>
+
+    <div class="titulo-seccion">
+
+      <h2>Más deportes</h2>
+
+      <span>⚾ 🏀 ⚽</span>
+
+    </div>
+
+
+    <div class="introduccion">
+
+      <p>
+        Sigue la actualidad deportiva nacional e internacional
+        a través de Zona Deportiva RD. Consulta las diferentes
+        categorías para encontrar información sobre tus deportes
+        favoritos.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <div id="espacio-anuncio-2"></div>
+
 
 </main>
+
 
 <footer>
 
@@ -705,222 +863,663 @@ footer p{
       ZONA <span>DEPORTIVA RD</span>
     </h2>
 
+
     <p>
       Noticias deportivas de República Dominicana y el mundo.
     </p>
+
 
     <p>
       © 2026 Zona Deportiva RD. Todos los derechos reservados.
     </p>
 
+
     <a href="#inicio" class="volver-arriba">
+
       Volver arriba ↑
+
     </a>
 
   </div>
 
 </footer>
 
+
+
 <script>
+
+/* =========================================================
+   VARIABLES
+========================================================= */
 
 let noticias = [];
 
-/* =========================
-   CARGAR NOTICIAS.JSON
-========================= */
+let anunciosCargados = false;
 
-fetch("./noticias.json")
-  .then(respuesta => {
 
-    if(!respuesta.ok){
-      throw new Error("No se pudo cargar noticias.json");
+/* =========================================================
+   URL PRINCIPAL
+========================================================= */
+
+const URL_SITIO =
+  "https://zonadeportivard.github.io/";
+
+
+/* =========================================================
+   IMAGEN DE RESPALDO
+========================================================= */
+
+const IMAGEN_RESPALDO =
+  "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80";
+
+
+/* =========================================================
+   ESCAPAR TEXTO
+========================================================= */
+
+function escaparTexto(texto){
+
+  const div = document.createElement("div");
+
+  div.textContent =
+    texto === undefined ||
+    texto === null
+      ? ""
+      : String(texto);
+
+  return div.textContent;
+
+}
+
+
+/* =========================================================
+   CREAR TARJETA DE NOTICIA
+========================================================= */
+
+function crearTarjeta(noticia){
+
+  const tarjeta =
+    document.createElement("article");
+
+  tarjeta.className =
+    "tarjeta";
+
+
+  /* IMAGEN */
+
+  const imagen =
+    document.createElement("img");
+
+  imagen.className =
+    "imagen-noticia";
+
+  imagen.loading =
+    "lazy";
+
+  imagen.alt =
+    noticia.titulo || "Noticia deportiva";
+
+  imagen.src =
+    noticia.imagen ||
+    IMAGEN_RESPALDO;
+
+
+  imagen.onerror = function(){
+
+    this.onerror = null;
+
+    this.src =
+      IMAGEN_RESPALDO;
+
+  };
+
+
+  /* CONTENIDO */
+
+  const contenido =
+    document.createElement("div");
+
+  contenido.className =
+    "tarjeta-contenido";
+
+
+  /* CATEGORÍA */
+
+  const categoria =
+    document.createElement("div");
+
+  categoria.className =
+    "categoria";
+
+  categoria.textContent =
+    noticia.categoria || "DEPORTES";
+
+
+  /* TÍTULO */
+
+  const titulo =
+    document.createElement("h3");
+
+  titulo.textContent =
+    noticia.titulo || "Noticia deportiva";
+
+
+  /* DESCRIPCIÓN */
+
+  const descripcion =
+    document.createElement("p");
+
+  descripcion.className =
+    "descripcion";
+
+  descripcion.textContent =
+    noticia.descripcion ||
+    "Información deportiva de actualidad.";
+
+
+  /* DATOS */
+
+  const datos =
+    document.createElement("div");
+
+  datos.className =
+    "datos";
+
+
+  const fecha =
+    noticia.fecha ||
+    "Fecha no disponible";
+
+
+  const fuente =
+    noticia.fuente ||
+    "Zona Deportiva RD";
+
+
+  datos.innerHTML =
+    "<strong>Fecha:</strong> " +
+    escaparTexto(fecha) +
+    "<br><strong>Fuente:</strong> " +
+    escaparTexto(fuente);
+
+
+  /* ACCIONES */
+
+  const acciones =
+    document.createElement("div");
+
+  acciones.className =
+    "acciones";
+
+
+  /* LEER */
+
+  const leer =
+    document.createElement("a");
+
+  leer.className =
+    "leer";
+
+  leer.textContent =
+    "Leer fuente";
+
+  leer.target =
+    "_blank";
+
+  leer.rel =
+    "noopener noreferrer";
+
+
+  if(noticia.url){
+
+    leer.href =
+      noticia.url;
+
+  }else{
+
+    leer.href =
+      URL_SITIO;
+
+  }
+
+
+  /* COMPARTIR */
+
+  const compartir =
+    document.createElement("a");
+
+  compartir.className =
+    "compartir";
+
+  compartir.textContent =
+    "Facebook";
+
+  compartir.target =
+    "_blank";
+
+  compartir.rel =
+    "noopener noreferrer";
+
+
+  const urlCompartir =
+    noticia.url ||
+    URL_SITIO;
+
+
+  compartir.href =
+    "https://www.facebook.com/sharer/sharer.php?u=" +
+    encodeURIComponent(urlCompartir);
+
+
+  /* ENSAMBLAR */
+
+  acciones.appendChild(leer);
+
+  acciones.appendChild(compartir);
+
+
+  contenido.appendChild(categoria);
+
+  contenido.appendChild(titulo);
+
+  contenido.appendChild(descripcion);
+
+  contenido.appendChild(datos);
+
+  contenido.appendChild(acciones);
+
+
+  tarjeta.appendChild(imagen);
+
+  tarjeta.appendChild(contenido);
+
+
+  return tarjeta;
+
+}
+
+
+/* =========================================================
+   CREAR BLOQUE ADSENSE
+========================================================= */
+
+function crearAnuncio(){
+
+  const contenedor =
+    document.createElement("div");
+
+  contenedor.className =
+    "anuncio";
+
+
+  const titulo =
+    document.createElement("div");
+
+  titulo.className =
+    "anuncio-titulo";
+
+  titulo.textContent =
+    "Publicidad";
+
+
+  const anuncio =
+    document.createElement("ins");
+
+  anuncio.className =
+    "adsbygoogle";
+
+  anuncio.style.display =
+    "block";
+
+  anuncio.setAttribute(
+    "data-ad-client",
+    "ca-pub-6764195930165637"
+  );
+
+  anuncio.setAttribute(
+    "data-ad-slot",
+    "1227465453"
+  );
+
+  anuncio.setAttribute(
+    "data-ad-format",
+    "auto"
+  );
+
+  anuncio.setAttribute(
+    "data-full-width-responsive",
+    "true"
+  );
+
+
+  contenedor.appendChild(titulo);
+
+  contenedor.appendChild(anuncio);
+
+
+  return contenedor;
+
+}
+
+
+/* =========================================================
+   CARGAR ADSENSE
+========================================================= */
+
+function cargarAnuncios(){
+
+  if(anunciosCargados){
+
+    return;
+
+  }
+
+
+  /*
+    IMPORTANTE:
+
+    Los anuncios solamente se crean después
+    de que las noticias hayan cargado correctamente.
+  */
+
+  if(!noticias || noticias.length === 0){
+
+    return;
+
+  }
+
+
+  const espacio1 =
+    document.getElementById(
+      "espacio-anuncio-1"
+    );
+
+
+  const espacio2 =
+    document.getElementById(
+      "espacio-anuncio-2"
+    );
+
+
+  if(!espacio1 || !espacio2){
+
+    return;
+
+  }
+
+
+  /* PRIMER ANUNCIO */
+
+  espacio1.appendChild(
+    crearAnuncio()
+  );
+
+
+  /* SEGUNDO ANUNCIO */
+
+  espacio2.appendChild(
+    crearAnuncio()
+  );
+
+
+  anunciosCargados = true;
+
+
+  /*
+    Esperamos un momento para permitir
+    que los elementos <ins> estén en el DOM.
+  */
+
+  setTimeout(function(){
+
+    try{
+
+      const anuncios =
+        document.querySelectorAll(
+          ".adsbygoogle"
+        );
+
+
+      anuncios.forEach(function(){
+
+        (window.adsbygoogle =
+          window.adsbygoogle || [])
+          .push({});
+
+      });
+
+
+    }catch(error){
+
+      console.log(
+        "AdSense pendiente de carga."
+      );
+
     }
 
-    return respuesta.json();
+  },300);
 
-  })
-  .then(datos => {
-
-    noticias = datos;
-
-    mostrarNoticias(noticias);
-
-  })
-  .catch(error => {
-
-    console.error("Error cargando noticias:", error);
-
-    document.getElementById("noticias").innerHTML = `
-      <p style="
-        color:#ff202b;
-        font-weight:900;
-        text-align:center;
-        padding:30px;
-        grid-column:1/-1;
-      ">
-        No se pudieron cargar las últimas noticias.
-      </p>
-    `;
-
-  });
+}
 
 
-/* =========================
+/* =========================================================
    MOSTRAR NOTICIAS
-========================= */
+========================================================= */
 
 function mostrarNoticias(lista){
 
-  const contenedor=document.getElementById("noticias");
+  const contenedor =
+    document.getElementById(
+      "noticias"
+    );
 
-  contenedor.innerHTML="";
 
-  if(!lista || lista.length===0){
+  contenedor.innerHTML = "";
 
-    contenedor.innerHTML=`
-      <p style="
-        color:#aaa;
-        text-align:center;
-        padding:30px;
-        grid-column:1/-1;
-      ">
-        No hay noticias disponibles.
-      </p>
+
+  if(!lista || lista.length === 0){
+
+    contenedor.innerHTML = `
+      <div class="mensaje">
+        No hay noticias disponibles en esta categoría.
+      </div>
     `;
 
     return;
 
   }
 
-  lista.forEach(noticia=>{
 
-    const compartir=
-      "https://www.facebook.com/sharer/sharer.php?u="+
-      encodeURIComponent(
-        "https://zonadeportivard.github.io/"
-      );
+  lista.forEach(function(noticia){
 
-    const tarjeta=document.createElement("article");
-
-    tarjeta.className="tarjeta";
-
-    tarjeta.innerHTML=`
-
-      <img
-        class="imagen-noticia"
-        src="${noticia.imagen}"
-        alt="${noticia.titulo}"
-        loading="lazy"
-        onerror="this.style.display='none'"
-      >
-
-      <div class="tarjeta-contenido">
-
-        <div class="categoria">
-          ${noticia.categoria}
-        </div>
-
-        <h3>
-          ${noticia.titulo}
-        </h3>
-
-        <p class="descripcion">
-          ${noticia.descripcion}
-        </p>
-
-        <div class="datos">
-
-          <strong>Fecha:</strong>
-          ${noticia.fecha}
-
-          <br>
-
-          <strong>Fuente:</strong>
-          ${noticia.fuente}
-
-        </div>
-
-        <div class="acciones">
-
-          <a
-            class="leer"
-            href="${noticia.url}"
-            target="_blank"
-            rel="noopener noreferrer">
-            Leer fuente
-          </a>
-
-          <a
-            class="compartir"
-            href="${compartir}"
-            target="_blank"
-            rel="noopener noreferrer">
-            Facebook
-          </a>
-
-        </div>
-
-      </div>
-
-    `;
-
-    contenedor.appendChild(tarjeta);
+    contenedor.appendChild(
+      crearTarjeta(noticia)
+    );
 
   });
 
 }
 
 
-/* =========================
+/* =========================================================
    FILTRAR NOTICIAS
-========================= */
+========================================================= */
 
 function filtrarNoticias(categoria,boton){
 
   document
     .querySelectorAll(".menu button")
-    .forEach(b=>b.classList.remove("activo"));
+    .forEach(function(b){
 
-  boton.classList.add("activo");
+      b.classList.remove(
+        "activo"
+      );
 
-  if(categoria==="TODAS"){
+    });
 
-    mostrarNoticias(noticias);
+
+  boton.classList.add(
+    "activo"
+  );
+
+
+  if(categoria === "TODAS"){
+
+    mostrarNoticias(
+      noticias
+    );
 
     return;
 
   }
 
-  const filtradas=noticias.filter(
-    noticia=>
-      noticia.categoria.toUpperCase()===categoria
-  );
 
-  mostrarNoticias(filtradas);
+  const filtradas =
+    noticias.filter(function(noticia){
+
+      return (
+        String(
+          noticia.categoria || ""
+        ).toUpperCase() === categoria
+      );
+
+    });
+
+
+  mostrarNoticias(
+    filtradas
+  );
 
 }
 
 
-/* =========================
-   ADSENSE
-========================= */
+/* =========================================================
+   CARGAR NOTICIAS.JSON
+========================================================= */
 
-window.addEventListener("load",()=>{
+function cargarNoticias(){
 
-  try{
+  fetch(
+    "./noticias.json",
+    {
+      cache:"no-store"
+    }
+  )
 
-    (adsbygoogle=window.adsbygoogle||[]).push({});
-    (adsbygoogle=window.adsbygoogle||[]).push({});
+  .then(function(respuesta){
 
-  }catch(error){
+    if(!respuesta.ok){
 
-    console.log("AdSense pendiente de carga.");
+      throw new Error(
+        "No se pudo cargar noticias.json"
+      );
+
+    }
+
+    return respuesta.json();
+
+  })
+
+
+  .then(function(datos){
+
+    if(!Array.isArray(datos)){
+
+      throw new Error(
+        "noticias.json no contiene una lista válida"
+      );
+
+    }
+
+
+    noticias =
+      datos.filter(function(noticia){
+
+        return (
+          noticia &&
+          noticia.titulo &&
+          noticia.descripcion
+        );
+
+      });
+
+
+    if(noticias.length === 0){
+
+      throw new Error(
+        "No existen noticias válidas"
+      );
+
+    }
+
+
+    /*
+      PRIMERO mostramos el contenido.
+    */
+
+    mostrarNoticias(
+      noticias
+    );
+
+
+    /*
+      DESPUÉS cargamos AdSense.
+    */
+
+    cargarAnuncios();
+
+  })
+
+
+  .catch(function(error){
+
+    console.error(
+      "Error cargando noticias:",
+      error
+    );
+
+
+    document.getElementById(
+      "noticias"
+    ).innerHTML = `
+
+      <div class="mensaje mensaje-error">
+
+        No se pudieron cargar las últimas
+        noticias deportivas.
+
+      </div>
+
+    `;
+
+
+    /*
+      IMPORTANTE:
+
+      Si las noticias no cargan,
+      NO se cargan anuncios.
+    */
+
+  });
+
+}
+
+
+/* =========================================================
+   INICIAR
+========================================================= */
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function(){
+
+    cargarNoticias();
 
   }
-
-});
+);
 
 </script>
+
 
 </body>
 </html>
