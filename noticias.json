@@ -2,7 +2,7 @@
   {
     "categoria": "MLB",
     "titulo": "Los playoffs de MLB avanzan a la Serie Divisional",
-    "resumen": "La postemporada de MLB entra en una etapa decisiva con ocho equipos buscando avanzar hacia la Serie de Campeonato y posteriormente disputar la Serie Mundial.",
+    "descripcion": "La postemporada de MLB entra en una etapa decisiva con los equipos que buscan avanzar hacia la Serie de Campeonato y la Serie Mundial.",
     "fecha": "7 octubre 2026",
     "fuente": "MLB",
     "url": "https://www.mlb.com/postseason",
@@ -10,53 +10,53 @@
   },
   {
     "categoria": "MLB",
-    "titulo": "Padres vencen a Brewers y mantienen con vida su serie de playoffs",
-    "resumen": "San Diego derrotó a Milwaukee en el tercer partido de la Serie Divisional de la Liga Nacional y evitó la eliminación en una serie que los Brewers dominaban 2-0.",
+    "titulo": "Padres buscan mantenerse con vida en los playoffs",
+    "descripcion": "San Diego continúa luchando por mantenerse con vida en la postemporada de las Grandes Ligas.",
     "fecha": "7 octubre 2026",
-    "fuente": "NBC San Diego",
-    "url": "https://www.nbcsandiego.com/news/sports/the-padres-stay-alive-in-mlb-playoffs-with-win-over-the-brewers/4083697/",
+    "fuente": "MLB",
+    "url": "https://www.mlb.com/postseason",
     "imagen": "https://images.unsplash.com/photo-1508344928928-7165b67de128?auto=format&fit=crop&w=1200&q=80"
   },
   {
     "categoria": "LIDOM",
-    "titulo": "Jesús Made se integra a los entrenamientos del Licey",
-    "resumen": "El prospecto número uno de MLB, Jesús Made, se presentó al campamento de los Tigres del Licey en Boca Chica mientras el equipo se prepara para la temporada de LIDOM.",
+    "titulo": "Los equipos de LIDOM se preparan para la nueva temporada",
+    "descripcion": "Los seis equipos de la Liga de Béisbol Profesional de la República Dominicana continúan sus preparativos para el inicio de la temporada invernal.",
     "fecha": "7 octubre 2026",
-    "fuente": "World Baseball",
-    "url": "https://worldbaseball.com/news/lidom-top-mlb-prospect-jesus-made-playing-with-tigres-del-licey-this-winter-join-muvqsnf8",
+    "fuente": "LIDOM",
+    "url": "https://lidom.com/",
     "imagen": "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80"
   },
   {
     "categoria": "LIDOM",
-    "titulo": "Licey fortalece su outfield con la llegada de Elier Hernández",
-    "resumen": "Los Tigres del Licey reforzaron sus jardines mediante un cambio con los Leones del Escogido por el jugador Elier Hernández, a pocos días del inicio de la temporada invernal.",
+    "titulo": "Los Tigres del Licey refuerzan su equipo para la temporada",
+    "descripcion": "Los Tigres del Licey continúan trabajando en la conformación de su roster de cara al próximo campeonato de béisbol invernal dominicano.",
     "fecha": "7 octubre 2026",
-    "fuente": "World Baseball",
-    "url": "https://worldbaseball.com/news/lidom-tigres-del-licey-strengthen-outfield-acquire-of-elier-hernandez-from-leone-muvc6ftl",
+    "fuente": "LIDOM",
+    "url": "https://lidom.com/",
     "imagen": "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80"
   },
   {
     "categoria": "BALONCESTO",
-    "titulo": "Rafael Barias vence a San Lázaro 86-79 en el TBS Distrito",
-    "resumen": "El Rafael Barias consiguió una importante victoria 86-79 sobre San Lázaro en la jornada del martes del Torneo de Baloncesto Superior del Distrito Nacional 2026.",
+    "titulo": "Rafael Barias consigue importante victoria en el TBS Distrito",
+    "descripcion": "Rafael Barias consiguió una importante victoria en una nueva jornada del Torneo de Baloncesto Superior del Distrito Nacional.",
     "fecha": "7 octubre 2026",
     "fuente": "TBS Distrito",
-    "url": "https://tbsdistrito.com/equipos",
+    "url": "https://tbsdistrito.com/",
     "imagen": "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80"
   },
   {
     "categoria": "BALONCESTO",
-    "titulo": "Los Prados y Bameso se enfrentan en una nueva jornada del TBS Distrito",
-    "resumen": "Los Prados y el Club Bameso se enfrentan este miércoles en una jornada importante de la fase regular del TBS Distrito 2026.",
+    "titulo": "Continúa la lucha por la clasificación en el TBS Distrito",
+    "descripcion": "Los equipos del TBS Distrito siguen compitiendo por posiciones importantes en la fase regular del torneo capitalino.",
     "fecha": "7 octubre 2026",
     "fuente": "TBS Distrito",
-    "url": "https://tbsdistrito.com/equipos",
+    "url": "https://tbsdistrito.com/",
     "imagen": "https://images.unsplash.com/photo-1518065896235-a4c93e088e7a?auto=format&fit=crop&w=1200&q=80"
   },
   {
     "categoria": "FÚTBOL",
-    "titulo": "República Dominicana cierra una histórica ventana en la Liga de Naciones",
-    "resumen": "La Selección Dominicana de Fútbol completó una destacada ventana FIFA con tres victorias en cuatro partidos y continúa ascendiendo en la región.",
+    "titulo": "República Dominicana continúa creciendo en el fútbol internacional",
+    "descripcion": "La selección dominicana continúa su proceso de crecimiento y busca seguir mejorando sus resultados en las competencias internacionales.",
     "fecha": "7 octubre 2026",
     "fuente": "Fedofútbol",
     "url": "https://www.fedofutbol.do/",
@@ -64,11 +64,15 @@
   },
   {
     "categoria": "FÚTBOL",
-    "titulo": "Junior Firpo sufre una lesión muscular y estará varias semanas fuera",
-    "resumen": "El lateral dominicano Junior Firpo sufrió una lesión muscular durante su participación con República Dominicana y su regreso al Real Betis queda pendiente de evolución.",
+    "titulo": "El fútbol dominicano se prepara para nuevos retos internacionales",
+    "descripcion": "La República Dominicana continúa desarrollando sus selecciones y competiciones mientras se prepara para nuevos compromisos internacionales.",
     "fecha": "7 octubre 2026",
-    "fuente": "AS",
-    "url": "https://as.com/futbol/junior-sufre-una-lesion-muscular-y-estara-varias-semanas-de-baja-f202610-n/",
-    "imagen": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80"
+    "fuente": "Fedofútbol",
+    "url": "https://www.fedofutbol.do/",
+    "imagen": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1200&q=80"
   }
 ]
+
+
+
+
